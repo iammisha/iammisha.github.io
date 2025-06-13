@@ -55,5 +55,56 @@ Medium 500 Italic
 На маленькую лодку - "слабая музыка"
 На большую и заключение - басовая.
 
-Ссылки подписаны в принципе в сообщении.
+Ссылки дублирую здесь
+
+
+Вариант 1.
+
+https://www.instagram.com/reels/audio/876787694497140?igsh=MTFpNW1mZXQzc2gwOQ==
+
+вариант 2.
+
+https://www.instagram.com/reels/audio/604803944054428?igsh=bXBhMWU5dHB4emFy
+
+вариант 3
+
+https://www.instagram.com/reels/audio/210107168589810?igsh=MTZjNHhvOW45YnF4dQ== - goosebumps marimba, маленькая лодка
+
+https://www.instagram.com/reels/audio/2708053722836167?igsh=dG0wbjVrdHBlM2Vk - goosebumps slowed, большая лодка 
+
+Mask off
+
+https://www.instagram.com/reels/audio/3974643919423123?igsh=MWQ4YXJzNjNneHdiZA== - lofi, маленькая
+
+https://www.instagram.com/reels/audio/1080643442590020?igsh=Z3Q4Z2o5YnkxdDMx - slowed, большая
+
+Turned down for what
+
+https://www.instagram.com/reels/audio/530324121999811?igsh=ZGEzbXRxY21weHE2 - начало маленькая, конец большая
+
+или
+
+https://www.instagram.com/reels/audio/1295861267229736?igsh=Mm5uYXZ2eGdhdXBp - маленькая 
+
+https://www.instagram.com/reels/audio/710703393998738?igsh=MWg2eXY5MDdrODlj - большая (концовку использовать, бас)
+
+Sicko mode
+
+https://www.instagram.com/reels/audio/1996197060472767?igsh=YnEza25rMDF1bXRw - начало маленькая, конец - большая
+
+Itisabeautifullife
+
+https://m.youtube.com/watch?v=42mII8HfUcE&pp=ygUjaXQgaXMgYSBiZWF1dGlmdWwgbGlmZSByZW1peCBzbG93ZWQ%3D - начало, тонкий женский голос, до 0:18
+
+https://www.youtube.com/watch?v=wl3HeEKpl_s - большая лодка - начинается с it is a beautiful life
+
+smoothoperator
+
+https://www.youtube.com/watch?v=00UGu1ySVeM - На маленькую лодку
+
+https://www.youtube.com/watch?v=U5Aq_fXAg9w - начало с 2:25!!!
+
+Вариант 
+
+https://www.instagram.com/reels/audio/1399022334764813?igsh=NnlhZzFlbDR1aHBv
 
