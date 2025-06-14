@@ -108,3 +108,19 @@ https://www.youtube.com/watch?v=U5Aq_fXAg9w - начало с 2:25!!!
 
 https://www.instagram.com/reels/audio/1399022334764813?igsh=NnlhZzFlbDR1aHBv
 
+
+
+# Комментарии
+
+![Pasted image 20250613212317.png|300](/img/user/files/Pasted%20image%2020250613212317.png)
+- текст не появляется, а уже присутсвует в самом первом кадре
+- изменить написание на 
+	- lil bro: doing his best...
+	- BIG bro: just flexed
+	- третью надпись полностью заменить на Know your place - в одну строчку - сохранить эмоджи
+
+![Pasted image 20250613212921.png|300](/img/user/files/Pasted%20image%2020250613212921.png)
+- изменить написание 
+	- crew tender: doing its job - в одну строчку
+	- ownder' tender: doing the most - в одну строчку - на кадрых сверху и сзади чтобы не закрывало моторы и название лодки
+	- Boss mode: on + эмоджи - в одну строчку
