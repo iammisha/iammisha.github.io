@@ -124,3 +124,4 @@ https://www.instagram.com/reels/audio/1399022334764813?igsh=NnlhZzFlbDR1aHBv
 	- crew tender: doing its job - в одну строчку
 	- ownder' tender: doing the most - в одну строчку - на кадрых сверху и сзади чтобы не закрывало моторы и название лодки
 	- Boss mode: on + эмоджи - в одну строчку
+- заменить самые последние кадры - где пролёт кривой спереди яхты - на кадры из большого ролика das auto 
