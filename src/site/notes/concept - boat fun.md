@@ -8,13 +8,14 @@
 
 **Материалы** здесь - [v.kravtcov.com/web/client/pubshares/hxKFmhrqJvbXyRvLUTH7ZY/browse](https://v.kravtcov.com/web/client/pubshares/hxKFmhrqJvbXyRvLUTH7ZY/browse)
 
-**Шрифт** попробовать такой - [SF Pro Display Font Family Download | Free Font.Download](https://font.download/font/sf-pro-display) - выбрать вариант "SF Pro Display Heavy Italic"
+
 
 ## Часть 1. Вступление - 00:00 - 00:07 сек
 
 - **музыка** - аудио со словами про город - файл “where the boys are open scene audeio - cutted”. может нужно аккуратнее обрезать ещё немного в самом начале или "сгладить" немного. я сам "вырезал" этот кусок, поэтому получилось "нечисто".
 - **текст-субтитры** следуют закадровому голосу - появляются по мере произнесения фразы, слово за словом
 	- Fort Lauderdale, Florida is a small corner of tropical heaven basking contentedly in the warm sun. 
+	- **Шрифт** попробовать такой - [SF Pro Display Font Family Download | Free Font.Download](https://font.download/font/sf-pro-display) - выбрать вариант "SF Pro Display Heavy Italic"
 - **видео** - пляж+океан или трафик лодок по реке. Нарезать из материала в папке *Intro videos*
 
 ## Часть 2. Кадр-склейка на 1 секунду
