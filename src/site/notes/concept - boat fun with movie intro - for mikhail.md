@@ -38,6 +38,10 @@ url страницы: [concept - boat fun with movie intro - for mikhail](https:
 [https://www.instagram.com/reels/audio/3863081183906968?igsh=MTdxOTYwZ3preWl3eA==](https://www.instagram.com/reels/audio/3863081183906968?igsh=MTdxOTYwZ3preWl3eA==) Stealing with you + mix with intro about city from movie
 
 
+
+> [!question]- How are you?
+> I'm good
+
  Private Thoughts {.dg-hide} 
 >[!note]# Тусовка, танцы - ЭТО ПОЗЖЕ {.dg-hide} 
 >Идея ролика - люди веселятся на лодке 
