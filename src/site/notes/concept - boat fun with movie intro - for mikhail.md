@@ -4,11 +4,13 @@
 
 #drone #videoediting #concept #instagram
 
-Тематика роликов “Вечеринка на лодке”
+
+url страницы: [concept - boat fun with movie intro - for mikhail](https://iammisha.github.io/concept-boat-fun-with-movie-intro-for-mikhail/)
 
 **Материалы** здесь - [v.kravtcov.com/web/client/pubshares/hxKFmhrqJvbXyRvLUTH7ZY/browse](https://v.kravtcov.com/web/client/pubshares/hxKFmhrqJvbXyRvLUTH7ZY/browse)
 
-
+---
+# Тематика - приветствие, машут рукой
 
 ## Часть 1. Вступление - 00:00 - 00:07 сек
 
@@ -16,13 +18,41 @@
 - **текст-субтитры** следуют закадровому голосу - появляются по мере произнесения фразы, слово за словом
 	- Fort Lauderdale, Florida is a small corner of tropical heaven basking contentedly in the warm sun. 
 	- **Шрифт** попробовать такой - [SF Pro Display Font Family Download | Free Font.Download](https://font.download/font/sf-pro-display) - выбрать вариант "SF Pro Display Heavy Italic"
-- **видео** - пляж+океан или трафик лодок по реке. Нарезать из материала в папке *Intro videos*
+- **видео** - пляж+океан или трафик лодок по реке. Нарезать из материала в папке *Intro videos* . Можно из одного файла «нарезать» кадры, не надо миксовать разные отрезки с разных файлов. В результате будет с одного видео-материала (файла) - один ролик для вступления reels.
+
+
+## Часть 2. Кадр-склейка на 1 секунду
+
+
+## Часть 3. Ролики машущие люди - 00:08 - 00:23 сек.
+
+**Есть ролики в материалах**, где люди недолго реагируют на съёмку (машут и только, без танцев и т.п.). В папке *boat parties > waving*
+
+- dji_0339
+- dji_0344
+- dji_0290_cutted
+
+Такие можно *“склеивать”* между собой и объединять в микс. 
+
+Использовать **трэк:** 
+[https://www.instagram.com/reels/audio/3863081183906968?igsh=MTdxOTYwZ3preWl3eA==](https://www.instagram.com/reels/audio/3863081183906968?igsh=MTdxOTYwZ3preWl3eA==) Stealing with you + mix with intro about city from movie
+
+
+# Тусовка, танцы - ЭТО ПОЗЖЕ
+Идея ролика - люди веселятся на лодке
+## Часть 1. Вступление - 00:00 - 00:07 сек
+
+- **музыка** - аудио со словами про город - файл “where the boys are open scene audeio - cutted”. может нужно аккуратнее обрезать ещё немного в самом начале или "сгладить" немного. я сам "вырезал" этот кусок, поэтому получилось "нечисто".
+- **текст-субтитры** следуют закадровому голосу - появляются по мере произнесения фразы, слово за словом
+	- Fort Lauderdale, Florida is a small corner of tropical heaven basking contentedly in the warm sun. 
+	- **Шрифт** попробовать такой - [SF Pro Display Font Family Download | Free Font.Download](https://font.download/font/sf-pro-display) - выбрать вариант "SF Pro Display Heavy Italic"
+- **видео** - пляж+океан или трафик лодок по реке. Нарезать из материала в папке *Intro videos* . Можно из одного файла «нарезать» кадры, не надо миксовать разные отрезки с разных файлов. В результате будет с одного видео-материала (файла) - один ролик для вступления reels.
 
 ## Часть 2. Кадр-склейка на 1 секунду
 
 ## Часть 3. Люди веселятся на лодке 00:08 - ХХ:23 сек.
 
-**Текст** - Party Mode: Activated🎉- только с 3 секунды примерно, далее пропадает
+**Текст** - Party Mode: Activated🎉- только 2 секунды примерно длительность, далее пропадает
 
 Есть ролики, где долго снимал одну группу людей и они реагировали на съёмку:
 
@@ -30,7 +60,11 @@
 - dji_0308 - это использовать потом
 - dji_0324 - это использовать потом
 
-Такие можно нарезать динамично (т.е. с несколькими склейками) под музыку подобной:
+Такие можно нарезать динамично (т.е. с несколькими склейками) . Одна нарезка с одного ролика. Не миксовать ролики между собой.
+
+**Под музыку подобной этой**
+Музыку не миксовать один трэк на фоне.
+
 
 [https://www.instagram.com/reels/audio/295314973677300?igsh=emx1NjVlMXdqd2Zo](https://www.instagram.com/reels/audio/295314973677300?igsh=emx1NjVlMXdqd2Zo)
 
@@ -51,17 +85,16 @@
 
 [https://www.instagram.com/reels/audio/2310502709235108?igsh=dGdzc3JmZGwyaXQ=](https://www.instagram.com/reels/audio/2310502709235108?igsh=dGdzc3JmZGwyaXQ=) For black people on video, waka flacka
 
-# ЭТО ПОЗЖЕ
+[https://www.instagram.com/reels/audio/1308215577236554?igsh=dTgwc3VmcmVsMXN4](https://www.instagram.com/reels/audio/1308215577236554?igsh=dTgwc3VmcmVsMXN4)
 
-**Есть ролики в материалах**, где люди недолго реагируют на съёмку (машут и всё)
+[https://www.instagram.com/reels/audio/913663167575649?igsh=MXhlNXN0YnNhcmhjbQ==](https://www.instagram.com/reels/audio/913663167575649?igsh=MXhlNXN0YnNhcmhjbQ==)
 
-- dji_0339
-- dji_0344
+[https://www.instagram.com/reels/audio/8291995664238079?igsh=MWY4aWV6ejV6MjJu](https://www.instagram.com/reels/audio/8291995664238079?igsh=MWY4aWV6ejV6MjJu) For black people
 
-Такие можно “склеивать” между собой и объединять в микс. Музыку не миксовать один трэк на фоне.
 
-## Музыка:
-[https://www.instagram.com/reels/audio/3863081183906968?igsh=MTdxOTYwZ3preWl3eA==](https://www.instagram.com/reels/audio/3863081183906968?igsh=MTdxOTYwZ3preWl3eA==) Stealing with you + mix with intro about city from movie
+
+
+
 
 # Примерный референсы
 
