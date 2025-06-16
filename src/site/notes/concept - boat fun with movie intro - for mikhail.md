@@ -108,3 +108,10 @@ url страницы: [concept - boat fun with movie intro - for mikhail](https:
   but visible inside Obsidian.
   You can include full paragraphs here.
 </div>
+
+
+::: dg-hide
+This content will be hidden on the Digital Garden site.
+But visible in Obsidian preview or editor.
+:::
+
