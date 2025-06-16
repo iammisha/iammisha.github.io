@@ -40,7 +40,16 @@ url страницы: [concept - boat fun with movie intro - for mikhail](https:
 
  Private Thoughts {.dg-hide} 
 >[!note]# Тусовка, танцы - ЭТО ПОЗЖЕ {.dg-hide} 
-Идея ролика - люди веселятся на лодке 
+>Идея ролика - люди веселятся на лодке 
+
+> [!info] Internal Notes {.dg-hide}
+> Hidden content
+
+> [!note] Hidden Section {.dg-hide}
+> This content will NOT show up on your published Digital Garden site.
+> But it **will be visible** inside Obsidian.
+
+
 ## Часть 1. Вступление - 00:00 - 00:07 сек
 
 - **музыка** - аудио со словами про город - файл “where the boys are open scene audeio - cutted”. может нужно аккуратнее обрезать ещё немного в самом начале или "сгладить" немного. я сам "вырезал" этот кусок, поэтому получилось "нечисто".
