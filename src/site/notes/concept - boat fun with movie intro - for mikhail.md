@@ -90,7 +90,7 @@ url страницы: [concept - boat fun with movie intro - for mikhail](https:
 
 [https://www.instagram.com/reels/audio/8291995664238079?igsh=MWY4aWV6ejV6MjJu](https://www.instagram.com/reels/audio/8291995664238079?igsh=MWY4aWV6ejV6MjJu) For black people
 
-
+::: dg-hide
 # Примерный референсы
 
 хотя тут качество выше и съемка видимо со стационарной камеры, но всё же “настроение” похожее:
@@ -102,6 +102,8 @@ url страницы: [concept - boat fun with movie intro - for mikhail](https:
 [https://www.instagram.com/reel/DKdAdp4MPBP/?igsh=ZGM5OXp1NzJyd2Rh](https://www.instagram.com/reel/DKdAdp4MPBP/?igsh=ZGM5OXp1NzJyd2Rh)
 
 [https://www.instagram.com/reel/DKZsT7xBrTz/?igsh=MTM5aHVzaDkwZXFmcQ==](https://www.instagram.com/reel/DKZsT7xBrTz/?igsh=MTM5aHVzaDkwZXFmcQ==)
+:::
+
 
 <div class="dg-hide">
   This text will be hidden on the published site,
