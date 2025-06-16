@@ -39,24 +39,10 @@ url страницы: [concept - boat fun with movie intro - for mikhail](https:
 
 
 
-> [!question]- How are you?
-> I'm good
-
- Private Thoughts {.dg-hide} 
->[!note]# Тусовка, танцы - ЭТО ПОЗЖЕ {.dg-hide} 
->Идея ролика - люди веселятся на лодке 
-
-> [!info] Internal Notes {.dg-hide}
-> Hidden content
-
-> [!note] Hidden Section {.dg-hide}
-> This content will NOT show up on your published Digital Garden site.
-> But it **will be visible** inside Obsidian.
-
-
+> [!note] Тусовка, танцы - ВСЁ ЧТО НИЖЕ СЕЙЧАС НЕАКТУАЛЬНО ПОКА
+Идея ролика - люди веселятся на лодке 
 ## Часть 1. Вступление - 00:00 - 00:07 сек
-
-- **музыка** - аудио со словами про город - файл “where the boys are open scene audeio - cutted”. может нужно аккуратнее обрезать ещё немного в самом начале или "сгладить" немного. я сам "вырезал" этот кусок, поэтому получилось "нечисто".
+**музыка** - аудио со словами про город - файл “where the boys are open scene audeio - cutted”. может нужно аккуратнее обрезать ещё немного в самом начале или "сгладить" немного. я сам "вырезал" этот кусок, поэтому получилось "нечисто".
 - **текст-субтитры** следуют закадровому голосу - появляются по мере произнесения фразы, слово за словом
 	- Fort Lauderdale, Florida is a small corner of tropical heaven basking contentedly in the warm sun. 
 	- **Шрифт** попробовать такой - [SF Pro Display Font Family Download | Free Font.Download](https://font.download/font/sf-pro-display) - выбрать вариант "SF Pro Display Heavy Italic"
@@ -78,7 +64,6 @@ url страницы: [concept - boat fun with movie intro - for mikhail](https:
 
 **Под музыку подобной этой**
 Музыку не миксовать один трэк на фоне.
-
 
 [https://www.instagram.com/reels/audio/295314973677300?igsh=emx1NjVlMXdqd2Zo](https://www.instagram.com/reels/audio/295314973677300?igsh=emx1NjVlMXdqd2Zo)
 
@@ -106,8 +91,8 @@ url страницы: [concept - boat fun with movie intro - for mikhail](https:
 [https://www.instagram.com/reels/audio/8291995664238079?igsh=MWY4aWV6ejV6MjJu](https://www.instagram.com/reels/audio/8291995664238079?igsh=MWY4aWV6ejV6MjJu) For black people
 
 
-
-
+>[!question] How are you?
+>Ok
 
 
 # Примерный референсы
