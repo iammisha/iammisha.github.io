@@ -38,7 +38,6 @@ url страницы: [concept - boat fun with movie intro - for mikhail](https:
 [https://www.instagram.com/reels/audio/3863081183906968?igsh=MTdxOTYwZ3preWl3eA==](https://www.instagram.com/reels/audio/3863081183906968?igsh=MTdxOTYwZ3preWl3eA==) Stealing with you + mix with intro about city from movie
 
 
-<div class="dg-hide">
 
 >[!question] Тусовка, танцы - ВСЁ ЧТО НИЖЕ СЕЙЧАС НЕАКТУАЛЬНО 
 Идея ролика - люди веселятся на лодке 
@@ -103,4 +102,9 @@ url страницы: [concept - boat fun with movie intro - for mikhail](https:
 [https://www.instagram.com/reel/DKdAdp4MPBP/?igsh=ZGM5OXp1NzJyd2Rh](https://www.instagram.com/reel/DKdAdp4MPBP/?igsh=ZGM5OXp1NzJyd2Rh)
 
 [https://www.instagram.com/reel/DKZsT7xBrTz/?igsh=MTM5aHVzaDkwZXFmcQ==](https://www.instagram.com/reel/DKZsT7xBrTz/?igsh=MTM5aHVzaDkwZXFmcQ==)
+
+<div class="dg-hide">
+  This text will be hidden on the published site,
+  but visible inside Obsidian.
+  You can include full paragraphs here.
 </div>
