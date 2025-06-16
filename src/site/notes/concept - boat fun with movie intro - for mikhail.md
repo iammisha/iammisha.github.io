@@ -38,8 +38,9 @@ url страницы: [concept - boat fun with movie intro - for mikhail](https:
 [https://www.instagram.com/reels/audio/3863081183906968?igsh=MTdxOTYwZ3preWl3eA==](https://www.instagram.com/reels/audio/3863081183906968?igsh=MTdxOTYwZ3preWl3eA==) Stealing with you + mix with intro about city from movie
 
 
+<div class="dg-hide">
 
-> [!note] Тусовка, танцы - ВСЁ ЧТО НИЖЕ СЕЙЧАС НЕАКТУАЛЬНО ПОКА
+>[!question] Тусовка, танцы - ВСЁ ЧТО НИЖЕ СЕЙЧАС НЕАКТУАЛЬНО 
 Идея ролика - люди веселятся на лодке 
 ## Часть 1. Вступление - 00:00 - 00:07 сек
 **музыка** - аудио со словами про город - файл “where the boys are open scene audeio - cutted”. может нужно аккуратнее обрезать ещё немного в самом начале или "сгладить" немного. я сам "вырезал" этот кусок, поэтому получилось "нечисто".
@@ -91,10 +92,6 @@ url страницы: [concept - boat fun with movie intro - for mikhail](https:
 [https://www.instagram.com/reels/audio/8291995664238079?igsh=MWY4aWV6ejV6MjJu](https://www.instagram.com/reels/audio/8291995664238079?igsh=MWY4aWV6ejV6MjJu) For black people
 
 
->[!question] How are you?
->Ok
-
-
 # Примерный референсы
 
 хотя тут качество выше и съемка видимо со стационарной камеры, но всё же “настроение” похожее:
@@ -106,3 +103,4 @@ url страницы: [concept - boat fun with movie intro - for mikhail](https:
 [https://www.instagram.com/reel/DKdAdp4MPBP/?igsh=ZGM5OXp1NzJyd2Rh](https://www.instagram.com/reel/DKdAdp4MPBP/?igsh=ZGM5OXp1NzJyd2Rh)
 
 [https://www.instagram.com/reel/DKZsT7xBrTz/?igsh=MTM5aHVzaDkwZXFmcQ==](https://www.instagram.com/reel/DKZsT7xBrTz/?igsh=MTM5aHVzaDkwZXFmcQ==)
+</div>
