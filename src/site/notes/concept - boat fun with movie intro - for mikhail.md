@@ -20,9 +20,7 @@ url страницы: [concept - boat fun with movie intro - for mikhail](https:
 	- **Шрифт** попробовать такой - [SF Pro Display Font Family Download | Free Font.Download](https://font.download/font/sf-pro-display) - выбрать вариант "SF Pro Display Heavy Italic"
 - **видео** - пляж+океан или трафик лодок по реке. Нарезать из материала в папке *Intro videos* . Можно из одного файла «нарезать» кадры, не надо миксовать разные отрезки с разных файлов. В результате будет с одного видео-материала (файла) - один ролик для вступления reels.
 
-
 ## Часть 2. Кадр-склейка на 1 секунду
-
 
 ## Часть 3. Ролики машущие люди - 00:08 - 00:23 сек.
 
@@ -39,8 +37,9 @@ url страницы: [concept - boat fun with movie intro - for mikhail](https:
 
 
 
->[!question] Тусовка, танцы - ВСЁ ЧТО НИЖЕ СЕЙЧАС НЕАКТУАЛЬНО 
-Идея ролика - люди веселятся на лодке 
+>[!question] ВСЁ ЧТО НИЖЕ СЕЙЧАС НЕАКТУАЛЬНО 
+
+Центральная идея ролика - люди веселятся на лодке 
 ## Часть 1. Вступление - 00:00 - 00:07 сек
 **музыка** - аудио со словами про город - файл “where the boys are open scene audeio - cutted”. может нужно аккуратнее обрезать ещё немного в самом начале или "сгладить" немного. я сам "вырезал" этот кусок, поэтому получилось "нечисто".
 - **текст-субтитры** следуют закадровому голосу - появляются по мере произнесения фразы, слово за словом
@@ -90,7 +89,7 @@ url страницы: [concept - boat fun with movie intro - for mikhail](https:
 
 [https://www.instagram.com/reels/audio/8291995664238079?igsh=MWY4aWV6ejV6MjJu](https://www.instagram.com/reels/audio/8291995664238079?igsh=MWY4aWV6ejV6MjJu) For black people
 
-::: dg-hide
+
 # Примерный референсы
 
 хотя тут качество выше и съемка видимо со стационарной камеры, но всё же “настроение” похожее:
@@ -102,21 +101,4 @@ url страницы: [concept - boat fun with movie intro - for mikhail](https:
 [https://www.instagram.com/reel/DKdAdp4MPBP/?igsh=ZGM5OXp1NzJyd2Rh](https://www.instagram.com/reel/DKdAdp4MPBP/?igsh=ZGM5OXp1NzJyd2Rh)
 
 [https://www.instagram.com/reel/DKZsT7xBrTz/?igsh=MTM5aHVzaDkwZXFmcQ==](https://www.instagram.com/reel/DKZsT7xBrTz/?igsh=MTM5aHVzaDkwZXFmcQ==)
-
-:::
-
-test
-
-
-<div class="dg-hide">
-  This text will be hidden on the published site,
-  but visible inside Obsidian.
-  You can include full paragraphs here.
-</div>
-
-
-::: dg-hide
-This content will be hidden on the Digital Garden site.
-But visible in Obsidian preview or editor.
-:::
 
