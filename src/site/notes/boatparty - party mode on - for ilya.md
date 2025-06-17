@@ -57,3 +57,15 @@ url: iammisha.github.io/partymodeon
 
 По видео в части 3 нужны "склейки", чтобы не шло сплошным потоком. 
 
+
+# Дополнение
+
+На 00:29 переход на чёрный экран с таким содержанием:
+
+Файл - canva-Qfg6eQKxIRA
+
+Вместо пальца вверх - сердце
+![Pasted image 20250617081742.png|300](/img/user/files/Pasted%20image%2020250617081742.png)
+
+Надпись #dronepatrolfl
+![Pasted image 20250617081804.png|300](/img/user/files/Pasted%20image%2020250617081804.png)
