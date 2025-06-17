@@ -10,7 +10,7 @@ url: iammisha.github.io/partymodeon
 материалы здесь: [ilya - Google Drive](https://drive.google.com/drive/folders/1lninv1zwnZt6Lu72pYhGzWsJAymlLTa7?usp=sharing) в единственной пока папке
 
 ---
-# Тематика - люди машут в сторону камеры
+# Тематика - люди танцуют, веселятся
 
 ## Часть 1. Вступление - 00:00 - 00:05 сек
 
