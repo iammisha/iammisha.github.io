@@ -168,6 +168,7 @@ SOFTWARE.
 
   
   .markdown-preview-view blockquote {
+    display: inline-block;
     border: 2px solid;
     border-color: var(--blockquote-border-color) !important;
     border-left-width: 2px !important;
@@ -214,6 +215,11 @@ SOFTWARE.
 
   
   
+
+  input.metadata-property-key-input {
+    color: var(--card-border-color);
+  }
+
   .cm-s-obsidian span.cm-inline-code,
   .markdown-preview-view code {
     font-family: var(--code-font) !important;
@@ -382,7 +388,6 @@ SOFTWARE.
 
   .workspace-leaf.workspace-leaf-content.view-content.canvas {
     background-color: var(--graph-bg) !important;
-    border: 1px solid var(--card-border-color);
     border-radius: 16px;
   }
 
@@ -406,22 +411,18 @@ SOFTWARE.
 
   body.mod-mobile .workspace-leaf-content[data-type="graph"] {
     background-color: var(--graph-bg) !important;
-    border: 1px solid var(--card-border-color);
   }
 
   body.mod-mobile .workspace-leaf-content[data-type="localgraph"] {
     background-color: var(--graph-bg) !important;
-    border: 1px solid var(--card-border-color);
   }
 
   .workspace-leaf-content[data-type="graph"] {
     background-color: var(--graph-bg) !important;
-    border: 1px solid var(--card-border-color);
   }
 
   .workspace-leaf-content[data-type="localgraph"] {
     background-color: var(--graph-bg) !important;
-    border: 1px solid var(--card-border-color);
   }
 
   .view-header {
@@ -658,7 +659,7 @@ SOFTWARE.
   }
 
   .markdown-reading-view {
-    background-color: var(--card-bg);
+    background-color: transparent !important;
   }
 
   body {
@@ -910,7 +911,6 @@ SOFTWARE.
   }
 
   .callout-content {
-    background-color: transparent;
     color: var(--text-color);
   }
 
@@ -934,7 +934,7 @@ SOFTWARE.
     color: var(--color-accent);
     text-shadow: var(--external-link-text-shadow);
     background-image: none;
-    padding-inline-end: none;
+    padding-inline-end: 0px;
   }
 
   a.external-link::after {
@@ -1159,6 +1159,26 @@ SOFTWARE.
 
 
 
+
+body.colored-headers.theme-dark:not(.colored-headers-override-toggle) {
+  --header-1: #474E5C;
+  --header-2: #5E6573;
+  --header-3: #787F8D;
+  --header-4: #979DAA;
+  --header-5: #B7BCC9;
+  --header-6: #D8DCE6;
+}
+
+body.colored-headers.theme-light:not(.colored-headers-override-toggle) {
+  --header-1: #2C313A;
+  --header-2: #3D4450;
+  --header-3: #4F5867;
+  --header-4: #61707F;
+  --header-5: #7A8A99;
+  --header-6: #95A5B2;
+}
+
+
 .colored-headers.colored-headers-grey.theme-light {
   --header-1: #2C313A;
   --header-2: #3D4450;
@@ -1321,7 +1341,93 @@ SOFTWARE.
 
 
 
+.colored-headers.theme-light.extended-light-color-schemes-toggle.violet-haze:not(.colored-headers-override-toggle) {
+  --header-1: #3D2C4F;
+  --header-2: #4E3A66;
+  --header-3: #5E4880;
+  --header-4: #6F5699;
+  --header-5: #8064B3;
+  --header-6: #9272CC;
+}
 
+
+.colored-headers.theme-light.extended-light-color-schemes-toggle.red-desert:not(.colored-headers-override-toggle) {
+  --header-1: #4A404A;
+  --header-2: #594252;
+  --header-3: #68445A;
+  --header-4: #774662;
+  --header-5: #86486A;
+  --header-6: #954A72;
+}
+
+
+.colored-headers.theme-dark.extended-dark-color-schemes-toggle.atlantic:not(.colored-headers-override-toggle) {
+  --header-1: #1E3A5F;
+  --header-2: #29527A;
+  --header-3: #356B95;
+  --header-4: #4184B0;
+  --header-5: #4C9DCC;
+  --header-6: #58B6E7;
+}
+
+
+.colored-headers.theme-dark.extended-dark-color-schemes-toggle.moss:not(.colored-headers-override-toggle) {
+  --header-1: #2C4F3D;
+  --header-2: #3A664E;
+  --header-3: #48805E;
+  --header-4: #56996F;
+  --header-5: #64B380;
+  --header-6: #72CC92;
+}
+
+
+.colored-headers.theme-light.extended-light-color-schemes-toggle.sky:not(.colored-headers-override-toggle) {
+  --header-1: #1E3A5F;
+  --header-2: #29527A;
+  --header-3: #356B95;
+  --header-4: #4184B0;
+  --header-5: #4C9DCC;
+  --header-6: #58B6E7;
+}
+
+
+.colored-headers.theme-light.extended-light-color-schemes-toggle.fog:not(.colored-headers-override-toggle) {
+  --header-1: #2C313A;
+  --header-2: #3D4450;
+  --header-3: #4F5867;
+  --header-4: #61707F;
+  --header-5: #7A8A99;
+  --header-6: #95A5B2;
+}
+
+
+.colored-headers.theme-dark.extended-dark-color-schemes-toggle.onyx:not(.colored-headers-override-toggle) {
+  --header-1: #474E5C;
+  --header-2: #5E6573;
+  --header-3: #787F8D;
+  --header-4: #979DAA;
+  --header-5: #B7BCC9;
+  --header-6: #D8DCE6;
+}
+
+
+.colored-headers.theme-dark.extended-dark-color-schemes-toggle.abyss:not(.colored-headers-override-toggle) {
+  --header-1: #9272CC;
+  --header-2: #8064B3;
+  --header-3: #6F5699;
+  --header-4: #5E4880;
+  --header-5: #4E3A66;
+  --header-6: #3D2C4F;
+}
+
+.colored-headers.theme-light.extended-light-color-schemes-toggle.leaf:not(.colored-headers-override-toggle) {
+  --header-1: #2C4F3D;
+  --header-2: #3A664E;
+  --header-3: #48805E;
+  --header-4: #56996F;
+  --header-5: #64B380;
+  --header-6: #72CC92;
+}
 
 
 
@@ -1600,7 +1706,7 @@ SOFTWARE.
     }
 
     .graph-view.color-circle {
-      color: var(--graph-bg) !important;
+      color: var(--color-panel) !important;
     }
 
     .graph-view.color-line {
@@ -2229,16 +2335,14 @@ SOFTWARE.
 
     body.mod-mobile .workspace-leaf-content[data-type="graph"] {
       background-color: var(--graph-bg) !important;
-      border: 1px solid var(--card-border-color);
     }
 
     .workspace-leaf-content[data-type="graph"] {
       background-color: var(--graph-bg) !important;
-      border: 1px solid var(--card-border-color);
     }
 
     .markdown-reading-view {
-      background-color: var(--card-bg);
+      background-color: transparent !important;
     }
 
     
