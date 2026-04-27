@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>gid_attractions</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdn.jsdelivr.net/npm/lucide@0.115.0/dist/umd/lucide.min.js"></script>
+<script>window.addEventListener("load",(()=>{document.querySelectorAll(".callout").forEach((e=>{const t=getComputedStyle(e).getPropertyValue("--callout-icon"),l=t&&t.trim().replace(/^lucide-/,"");if(l){const t=e.querySelector(".callout-title");if(t){const e=document.createElement("div"),c=document.createElement("i");e.appendChild(c),c.setAttribute("icon-name",l),e.setAttribute("class","callout-icon"),t.insertBefore(e,t.firstChild)}}})),lucide.createIcons(),Array.from(document.querySelectorAll(".callout.is-collapsible")).forEach((e=>{e.querySelector(".callout-title").addEventListener("click",(t=>{e.classList.contains("is-collapsed")?e.classList.remove("is-collapsed"):e.classList.add("is-collapsed")}))}))}))</script>
+<script async src="https://fastly.jsdelivr.net/npm/force-graph@1.43.0/dist/force-graph.min.js"></script>
+<script async src="https://fastly.jsdelivr.net/npm/@alpinejs/persist@3.11.1/dist/cdn.min.js"></script>
+<script src="https://fastly.jsdelivr.net/npm/alpinejs@3.11.1/dist/cdn.min.js" async></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-okaidia.min.css" integrity="sha512-mIs9kKbaw6JZFfSuo+MovjU+Ntggfoj8RwAmJbVXQ5mkAX5LlgETQEweFPI18humSPHymTb5iikEOKWF7I8ncQ==" crossorigin="anonymous" referrerpolicy="no-referrer" async>
+<script src="https://fastly.jsdelivr.net/npm/whatwg-fetch@3.6.2/dist/fetch.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" async></script>
+<link href="/styles/digital-garden-base.css" rel="stylesheet">
+<link href="/styles/obsidian-base.css" rel="stylesheet">
+<link href="/styles/_theme.393fc932.css" rel="stylesheet">
+<link href="/styles/custom-style.css" rel="stylesheet">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<style></style>
+<style></style>
+</head>
+<body class="theme-dark markdown-preview-view markdown-rendered markdown-preview-section css-settings-manager theme-dark mod-windows is-frameless is-hidden-frameless obsidian-app show-inline-title show-ribbon show-view-header is-maximized minimal-theme minimal-default-dark minimal-default-light colorful-headings colorful-active links-int-on links-ext-on full-width-media img-grid minimal-folding minimal-line-nums minimal-readable minimal-light minimal-dark chart-default-width table-default-width img-default-width iframe-default-width map-default-width outliner-plugin-dnd css-settings-manager callouts-default trim-cols checkbox-circle pdf-seamless-on pdf-invert-dark pdf-blend-light sidebar-tabs-default ribbon-hidden maximize-tables-off tabs-default tab-stack-top minimal-tab-title-hover is-focused">
+<nav class="navbar">
+<div class="navbar-inner">
+<a href="/" style="text-decoration:none">
+<h1 style="margin:15px!important">Digital Garden</h1>
+</a>
+</div>
+</nav>
+<main class="content cm-s-obsidian">
+<header>
+<div class="header-meta">
+</div>
+</header>
+<h1 id="gid-attractions-attraction-database" tabindex="-1">gid_Attractions_attraction database</h1>
+<h3 id="agency-id-ag-01192118650" tabindex="-1">AGENCY ID - AG01192118650</h3>
+<p>1 - Александро-Невская лавра == 11103845 - Свято-Троицкая Александро-Невская лавра</p>
+<p>2 - Крейсер &quot;Аврора&quot; == 11102639 - Крейсер Аврора</p>
+<p>3 - ПЕТРОПАВЛОВСКАЯ КРЕПОСТЬ == 1110295 Петропавловская крепость</p>
+<p>4 - ИСААКИЕВСКИЙ СОБОР｜СПАС-НА-КРОВИ - <mark>РАЗДЕЛИТЬ НА ДВА ОТДЕЛЬНЫХ ОБЪЕКТА?????</mark> === 11109086 - Храм спаса на крови + 11107279 - Исаакиевский собор==???==</p>
+<p>5 - ГОСУДАРСТВЕННЫЙ ЭРМИТАЖ == 11108092 - Новый Эрмитаж + 11101720 - Здание Главного штаба + 11103694 - Госуда́рственный Эрмита́ж</p>
+<p>6 - ЮСУПОВСКИЙ ДВОРЕЦ = 11102820 - Юсуповский Дворец на Мойке</p>
+<p>7 - ПУШКИН</p>
+<p>8 - ПАВЛОВСК == 11108761 Павловск Парк + 11104453 - Государственный музей-заповедник &quot;Павловск&quot;</p>
+<p>9 - ПЕТЕРГОФ</p>
+<p>10 - ГАТЧИНА</p>
+<p>12 - РУССКИЙ МУЗЕЙ == 11104053 - Государственный Русский музей</p>
+<p>13 - МУЗЕЙ ФАБЕРЖЕ == 11101771 - Музей Фаберже</p>
+<p>14 - СТРЕЛЬНА. КОНСТАНТИНОВСКИЙ ДВОРЕЦ</p>
+<h3 id="agency-id-ag-01192118649-avangard" tabindex="-1">AGENCY ID - AG01192118649 (Авангард)</h3>
+<p>16 - Центральный Военно-морской музей == 11109528 - Центральный военно-морской музей</p>
+<p>17 - Гранд макет == 11105002 - Гранд Макет Россия</p>
+<p>18 - Гатчина</p>
+<p>19 - Исаакиевский собор == 11107279 - Исаакиевский собор???</p>
+<p>20 - Спас на крови == 11109086 - Храм спаса на крови</p>
+<p>23 - Кунс<mark>Т</mark>камера == 1110390 - Кунсткамера</p>
+<p>24 - Музей городской скульптуры == 11108875 - Государственный музей городской скульптуры</p>
+<p>25 - Музей Российских железных дорог == 11101512 - Музей железных дорог России</p>
+<p>26 - Павловск == 11108761 Павловск Парк + 11104453 - Государственный музей-заповедник &quot;Павловск&quot;</p>
+<p>27 - Петропавловская крепость == 1110295 Петропавловская крепость</p>
+<p>28 - Пушкин == серия объектов, смотри ниже</p>
+<p>29 Петровская Акватория == Петровская акватория Музей-Макет Петербурга и Пригородов</p>
+<p>30 - Петергоф == серия объектов, смотри ниже</p>
+<p>31 - Александрия == часть Петергофа</p>
+<p>32 - Ораниенбаум == Музей-заповедник &quot;Ораниенбаум&quot;</p>
+<p>33 - Константиновский дворец == 11102625 - Государственный комплекс &quot;Дворец конгрессов&quot; (Константиновский дворец)</p>
+<p>34 - Музей Фаберже == 11101771 - Музей Фаберже</p>
+<p>35 - Русский музей ========== 11104053 - Государственный Русский музей</p>
+<p>36 - Юсуповский дворец ====== 11102820 - Юсуповский Дворец на Мойке</p>
+<p>37 - Эрмитаж ============== 11108092 - Новый Эрмитаж + 11101720 - Здание Главного штаба + 11103694 - Госуда́рственный Эрмита́ж</p>
+<h1 id="sparshennaya-baza-dannyh" tabindex="-1">Спаршенная база данных</h1>
+<ul>
+<li>
+<p>11109528 - Центральный военно-морской музей</p>
+</li>
+<li>
+<p>11108875 - Государственный музей городской скульптуры</p>
+</li>
+<li>
+<p>11101512 - Музей железных дорог России</p>
+</li>
+<li>
+<p>11103845 - Свято-Троицкая Александро-Невская лавра</p>
+</li>
+<li>
+<p>11102639 - Крейсер Аврора</p>
+</li>
+<li>
+<p>11105002 - Гранд Макет Россия</p>
+</li>
+<li>
+<p>11107800 - Петровская акватория Музей-Макет Петербурга и Пригородов</p>
+</li>
+<li>
+<p>11101279 - Музей-заповедник &quot;Ораниенбаум&quot;</p>
+</li>
+<li>
+<p>11102625 - Государственный комплекс &quot;Дворец конгрессов&quot; (Константиновский дворец)</p>
+</li>
+<li>
+<p>1110390 - Кунсткамера</p>
+</li>
+<li>
+<p>11102820 - Юсуповский Дворец на Мойке</p>
+</li>
+<li>
+<p>11109086 - Храм спаса на крови</p>
+</li>
+</ul>
+<p>~~11106647 - Фондохранилище Государственного Эрмитажа Старая Де..</p>
+<p><s>11104284 Строгановский дворец</s></p>
+<ul>
+<li>
+<p>1110295 Петропавловская крепость</p>
+</li>
+<li>
+<p>11108761 Павловск Парк</p>
+</li>
+<li>
+<p>11108092 - Новый Эрмитаж</p>
+</li>
+</ul>
+<p>11107279 - Исаакиевский собор???</p>
+<p>== 11101771 - Музей Фаберже</p>
+<p>11102188 - Мраморный дворец (филиал Русского музея)</p>
+<p>11109733 - Каза́нский кафедра́льный собо́р - <mark>убрать ударения</mark> - не нужно соединение с прайсовой таблицей</p>
+<ul>
+<li>11101720 - Здание Главного штаба</li>
+</ul>
+<p>11104646 - Михайловский Замок</p>
+<p>11107038 - Дворец Меншикова</p>
+<ul>
+<li>
+<p>11103694 - Госуда́рственный Эрмита́ж - <mark>убрать ударения</mark></p>
+</li>
+<li>
+<p>11104053 - Государственный Русский музей</p>
+</li>
+<li>
+<p>11104453 - Государственный музей-заповедник &quot;Павловск&quot;</p>
+</li>
+</ul>
+<h3 id="pushkin" tabindex="-1">Пушкин</h3>
+<p>11106107 - Государственный Музей-Заповедник Царское Село<br>
+11108512 - Павильон Эрмитажная кухня<br>
+11102337 - Павильон Шапель<br>
+11104925 - Павильон Турецкая баня<br>
+11102651 - Нижний Парк<br>
+11102018 - Александровский парк<br>
+11109630 - Александровский Дворец</p>
+<h3 id="petergof" tabindex="-1">Петергоф</h3>
+<p>11105246 - Государственный Музей-Заповедник &quot;Петергоф&quot;<br>
+11107284 - Павильон Эрмитаж<br>
+11108612 - Нижний Парк<br>
+11102524 - Исторический музей-дворец Монплезир<br>
+11106341 - Дворец &quot;Марли&quot;<br>
+11108198 - Гроты Большого каскада</p>
+<p>11108819 - &quot;Петергоф&quot;, Государственный Музей-Заповедник&quot;, Павильо ???</p>
+</main>
+<script>window.location.hash&&document.getElementById(window.location.hash.slice(1)).classList.add("referred"),window.addEventListener("hashchange",(e=>{const t=e.oldURL.split("#");t[1]&&document.getElementById(t[1]).classList.remove("referred");const n=e.newURL.split("#");n[1]&&document.getElementById(n[1]).classList.add("referred")}),!1);const url_parts=window.location.href.split("#"),url=url_parts[0],referrence=url_parts[1];document.querySelectorAll(".cm-s-obsidian > *[id]").forEach((function(e){e.ondblclick=function(e){const t=url+"#"+e.target.id;navigator.clipboard.writeText(t)}}))</script>
+<script src="https://fastly.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js"></script>
+<script defer="defer">TIMESTAMP_FORMAT="MMM dd, yyyy h:mm a",document.querySelectorAll(".human-date").forEach((function(e){date=e.getAttribute("data-date")||e.innerText,parsed_date=luxon.DateTime.fromISO(date),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromSQL(date)),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromHTML(date)),e.innerHTML=parsed_date.toFormat(TIMESTAMP_FORMAT)}))</script>
+<script>lucide.createIcons({attrs:{class:["svg-icon"]}})</script>
+</body>
+</html>
