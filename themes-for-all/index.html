@@ -1,0 +1,696 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Темы и специалиация гида во вкадке ПАРТНЁРТСВО в профиле гида</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdn.jsdelivr.net/npm/lucide@0.115.0/dist/umd/lucide.min.js"></script>
+<script>window.addEventListener("load",(()=>{document.querySelectorAll(".callout").forEach((e=>{const t=getComputedStyle(e).getPropertyValue("--callout-icon"),l=t&&t.trim().replace(/^lucide-/,"");if(l){const t=e.querySelector(".callout-title");if(t){const e=document.createElement("div"),c=document.createElement("i");e.appendChild(c),c.setAttribute("icon-name",l),e.setAttribute("class","callout-icon"),t.insertBefore(e,t.firstChild)}}})),lucide.createIcons(),Array.from(document.querySelectorAll(".callout.is-collapsible")).forEach((e=>{e.querySelector(".callout-title").addEventListener("click",(t=>{e.classList.contains("is-collapsed")?e.classList.remove("is-collapsed"):e.classList.add("is-collapsed")}))}))}))</script>
+<script async src="https://fastly.jsdelivr.net/npm/force-graph@1.43.0/dist/force-graph.min.js"></script>
+<script async src="https://fastly.jsdelivr.net/npm/@alpinejs/persist@3.11.1/dist/cdn.min.js"></script>
+<script src="https://fastly.jsdelivr.net/npm/alpinejs@3.11.1/dist/cdn.min.js" async></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-okaidia.min.css" integrity="sha512-mIs9kKbaw6JZFfSuo+MovjU+Ntggfoj8RwAmJbVXQ5mkAX5LlgETQEweFPI18humSPHymTb5iikEOKWF7I8ncQ==" crossorigin="anonymous" referrerpolicy="no-referrer" async>
+<script src="https://fastly.jsdelivr.net/npm/whatwg-fetch@3.6.2/dist/fetch.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" async></script>
+<link href="/styles/digital-garden-base.css" rel="stylesheet">
+<link href="/styles/obsidian-base.css" rel="stylesheet">
+<link href="/styles/_theme.5c5ced1a.css" rel="stylesheet">
+<link href="/styles/custom-style.css" rel="stylesheet">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<style></style>
+<style></style>
+</head>
+<body class="theme-dark markdown-preview-view markdown-rendered markdown-preview-section css-settings-manager theme-dark mod-windows is-frameless is-hidden-frameless obsidian-app show-inline-title show-ribbon show-view-header is-maximized minimal-theme minimal-default-dark minimal-default-light colorful-headings colorful-active links-int-on links-ext-on full-width-media img-grid minimal-folding minimal-line-nums minimal-readable minimal-light minimal-dark chart-default-width table-default-width img-default-width iframe-default-width map-default-width outliner-plugin-dnd css-settings-manager callouts-default trim-cols checkbox-circle pdf-seamless-on pdf-invert-dark pdf-blend-light sidebar-tabs-default ribbon-hidden maximize-tables-off tabs-default tab-stack-top minimal-tab-title-hover is-focused">
+<nav class="navbar">
+<div class="navbar-inner">
+<a href="/" style="text-decoration:none">
+<h1 style="margin:15px!important">Digital Garden</h1>
+</a>
+</div>
+</nav>
+<main class="content cm-s-obsidian">
+<header>
+<div class="header-meta">
+</div>
+</header>
+<h3 id="pravila-ui" tabindex="-1">Правила UI</h3>
+<p>Гид выбирает:</p>
+<p>до 10–15 специализаций</p>
+<p>из них может отметить:</p>
+<p>до 5 основных</p>
+<p>Например:</p>
+<blockquote>
+<p>Основные специализации<br>
+Архитектура<br>
+Достоевский<br>
+Блокада Ленинграда<br>
+Дворы и парадные</p>
+</blockquote>
+<p>Это потом влияет на выдачу при поиске партнёра.</p>
+<h1 id="tz-reorganizacziya-spravochnika-tematik" tabindex="-1">ТЗ: реорганизация справочника тематик</h1>
+<h2 id="1-zadacha" tabindex="-1">1. Задача</h2>
+<p>Справочник тематик должен использоваться одновременно в нескольких сценариях платформы:</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Сценарий</th>
+<th>Для чего</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Заявка туриста</td>
+<td>турист указывает, что ему интересно</td>
+</tr>
+<tr>
+<td>Профиль гида</td>
+<td>гид указывает свои специализации</td>
+</tr>
+<tr>
+<td>Поиск гида агентством</td>
+<td>агентство ищет гида по тематике</td>
+</tr>
+<tr>
+<td>Создание экскурсии</td>
+<td>гид/агентство назначает экскурсии основную и дополнительные темы</td>
+</tr>
+<tr>
+<td>Сайт гида/агентства</td>
+<td>турист фильтрует экскурсии по тематикам</td>
+</tr>
+<tr>
+<td>В будущем</td>
+<td>автоматическое сопоставление заявки ↔ гид ↔ экскурсии</td>
+</tr>
+</tbody>
+</table></div>
+<p>Справочник должен быть <strong>единым</strong>, но набор отображаемых элементов может отличаться в разных интерфейсах.</p>
+<h1 id="2-chto-izmenit-konczeptualno" tabindex="-1">2. Что изменить концептуально</h1>
+<p>Сейчас в <code>lib_theme</code> смешаны:</p>
+<ul>
+<li>реальные темы;</li>
+<li>сезонность;</li>
+<li>питание;</li>
+<li>формат;</li>
+<li>слишком узкие гастрономические теги;</li>
+<li>слишком широкие бессодержательные понятия.</li>
+</ul>
+<h1 id="3-struktura-code-lib-theme-code" tabindex="-1">3. Структура <code>lib_theme</code></h1>
+<p>Я бы оставил текущую таблицу, но расширил её.</p>
+<p>ALTER TABLE lib_theme</p>
+<pre><code class="language-SQL">    ADD COLUMN parent_id INT NULL,
+
+    ADD COLUMN code VARCHAR(100) NULL,
+
+    ADD COLUMN item_type VARCHAR(20) NOT NULL DEFAULT 'theme',
+
+    ADD COLUMN is_active TINYINT(1) NOT NULL DEFAULT 1,
+
+    ADD COLUMN sort_order INT NOT NULL DEFAULT 0,
+
+    ADD COLUMN redirect_to_id INT NULL;
+</code></pre>
+<p>И после миграции:</p>
+<pre><code class="language-SQL">CREATE UNIQUE INDEX uq_lib_theme_code
+
+ON lib_theme(code);
+</code></pre>
+<h3 id="polya" tabindex="-1">Поля</h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Поле</th>
+<th>Значение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>id_theme</code></td>
+<td>текущий внутренний ID</td>
+</tr>
+<tr>
+<td><code>parent_id</code></td>
+<td>родительская группа</td>
+</tr>
+<tr>
+<td><code>code</code></td>
+<td>постоянный системный код</td>
+</tr>
+<tr>
+<td><code>name_theme</code></td>
+<td>название</td>
+</tr>
+<tr>
+<td><code>item_type</code></td>
+<td><code>group</code> или <code>theme</code></td>
+</tr>
+<tr>
+<td><code>is_active</code></td>
+<td>доступна ли тема</td>
+</tr>
+<tr>
+<td><code>sort_order</code></td>
+<td>порядок отображения</td>
+</tr>
+<tr>
+<td><code>redirect_to_id</code></td>
+<td>куда перенаправлять устаревшую тему</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Важно:</strong> бизнес-логика API не должна строиться на <code>name_theme</code> и желательно не строиться на конкретных числовых ID.</p>
+<p>Например:</p>
+<p>code = blockade_leningrad</p>
+<p>name_theme = Блокада Ленинграда</p>
+<p>Название в будущем можно поменять без изменения логики приложения.</p>
+<h1 id="4-konteksty-ispolzovaniya" tabindex="-1">4. Контексты использования</h1>
+<p>Не советую делать пять колонок вида:</p>
+<p>show_for_tourist</p>
+<p>show_for_guide</p>
+<p>show_for_excursion</p>
+<p>...</p>
+<p>Это сначала удобно, но со временем появятся новые сценарии.</p>
+<p>Лучше отдельная таблица:</p>
+<pre><code class="language-sql">CREATE TABLE lib_theme_context (
+
+    theme_id INT NOT NULL,
+
+    context_code VARCHAR(50) NOT NULL,
+
+    is_visible TINYINT(1) NOT NULL DEFAULT 1,
+
+    is_featured TINYINT(1) NOT NULL DEFAULT 0,
+
+    sort_order INT NOT NULL DEFAULT 0,
+
+  
+
+    PRIMARY KEY (theme_id, context_code),
+
+  
+
+    CONSTRAINT fk_theme_context_theme
+
+        FOREIGN KEY (theme_id)
+
+        REFERENCES lib_theme(id_theme)
+
+);
+</code></pre>
+<p>Контексты:</p>
+<p>tourist_request</p>
+<p>guide_profile</p>
+<p>excursion_editor</p>
+<p>public_excursion_filter</p>
+<p>partner_guide_search</p>
+<p>Например:</p>
+<p>Архитектура</p>
+<p>tourist_request visible</p>
+<p>guide_profile visible</p>
+<p>excursion_editor visible</p>
+<p>public_excursion_filter visible</p>
+<p>partner_guide_search visible</p>
+<p>А:</p>
+<p>Достоевский</p>
+<p>tourist_request не featured</p>
+<p>guide_profile visible</p>
+<p>excursion_editor visible</p>
+<p>public_excursion_filter visible</p>
+<p>partner_guide_search visible</p>
+<h1 id="5-finalnaya-struktura-tematik" tabindex="-1">5. Финальная структура тематик</h1>
+<h2 id="gruppa-1-istoriya-peterburga" tabindex="-1">Группа 1. История Петербурга</h2>
+<p><code>code: history</code></p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Тема</th>
+<th>code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Основание Петербурга и Пётр I</td>
+<td><code>peter_founding</code></td>
+</tr>
+<tr>
+<td>Императорский Петербург и Романовы</td>
+<td><code>imperial_romanovs</code></td>
+</tr>
+<tr>
+<td>Революция 1917 года</td>
+<td><code>revolution_1917</code></td>
+</tr>
+<tr>
+<td>Советский Ленинград</td>
+<td><code>soviet_leningrad</code></td>
+</tr>
+<tr>
+<td>Блокада Ленинграда</td>
+<td><code>blockade_leningrad</code></td>
+</tr>
+<tr>
+<td>Военная история</td>
+<td><code>military_history</code></td>
+</tr>
+<tr>
+<td>Морская история</td>
+<td><code>maritime_history</code></td>
+</tr>
+<tr>
+<td>История повседневной жизни</td>
+<td><code>everyday_history</code></td>
+</tr>
+<tr>
+<td>Криминальная история</td>
+<td><code>crime_history</code></td>
+</tr>
+<tr>
+<td>Археология</td>
+<td><code>archaeology</code></td>
+</tr>
+</tbody>
+</table></div>
+<p><code>Археология</code> активна, но не должна быть одним из основных фильтров для туриста.</p>
+<hr>
+<h1 id="6-arhitektura-i-gorod" tabindex="-1">6. Архитектура и город</h1>
+<p><code>code: architecture_city</code></p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Тема</th>
+<th>code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Архитектура</td>
+<td><code>architecture</code></td>
+</tr>
+<tr>
+<td>Архитектурные стили</td>
+<td><code>architecture_styles</code></td>
+</tr>
+<tr>
+<td>Дворцы и особняки</td>
+<td><code>palaces_mansions</code></td>
+</tr>
+<tr>
+<td>Интерьеры</td>
+<td><code>interiors</code></td>
+</tr>
+<tr>
+<td>Доходные дома</td>
+<td><code>tenement_houses</code></td>
+</tr>
+<tr>
+<td>Дворы и парадные</td>
+<td><code>courtyards_entrances</code></td>
+</tr>
+<tr>
+<td>Непарадный Петербург</td>
+<td><code>non_touristic_petersburg</code></td>
+</tr>
+<tr>
+<td>Районы и локальная история</td>
+<td><code>districts_local_history</code></td>
+</tr>
+<tr>
+<td>Дворцово-парковые ансамбли</td>
+<td><code>palace_park_ensembles</code></td>
+</tr>
+</tbody>
+</table></div>
+<hr>
+<h1 id="7-iskusstvo-i-muzei" tabindex="-1">7. Искусство и музеи</h1>
+<p><code>code: art_museums</code></p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Тема</th>
+<th>code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Изобразительное искусство</td>
+<td><code>fine_art</code></td>
+</tr>
+<tr>
+<td>Музеи и музейные коллекции</td>
+<td><code>museum_collections</code></td>
+</tr>
+<tr>
+<td>Современное искусство</td>
+<td><code>contemporary_art</code></td>
+</tr>
+<tr>
+<td>Уличное искусство</td>
+<td><code>street_art</code></td>
+</tr>
+<tr>
+<td>Фотография</td>
+<td><code>photography</code></td>
+</tr>
+<tr>
+<td>Дизайн и мода</td>
+<td><code>design_fashion</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>При этом <strong>Эрмитаж, Русский музей, Петергоф и т. п. не надо делать темами</strong>.</p>
+<p>Это уже:</p>
+<p>объект / музей / достопримечательность</p>
+<p>и должно жить в другом справочнике.</p>
+<hr>
+<h1 id="8-literatura-i-znamenitye-lichnosti" tabindex="-1">8. Литература и знаменитые личности</h1>
+<p><code>code: literature_people</code></p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Тема</th>
+<th>code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Литературный Петербург</td>
+<td><code>literary_petersburg</code></td>
+</tr>
+<tr>
+<td>Достоевский</td>
+<td><code>dostoevsky</code></td>
+</tr>
+<tr>
+<td>Пушкин</td>
+<td><code>pushkin</code></td>
+</tr>
+<tr>
+<td>Серебряный век</td>
+<td><code>silver_age</code></td>
+</tr>
+<tr>
+<td>Знаменитые жители Петербурга</td>
+<td><code>famous_people</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>В будущем можно добавить:</p>
+<p>Ахматова</p>
+<p>Бродский</p>
+<p>Довлатов</p>
+<p>но сейчас не стоит раздувать справочник.</p>
+<hr>
+<h1 id="9-muzyka-teatr-i-kino" tabindex="-1">9. Музыка, театр и кино</h1>
+<p><code>code: music_theatre_cinema</code></p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Тема</th>
+<th>code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Классическая музыка</td>
+<td><code>classical_music</code></td>
+</tr>
+<tr>
+<td>Театр и балет</td>
+<td><code>theatre_ballet</code></td>
+</tr>
+<tr>
+<td>Петербургский рок</td>
+<td><code>petersburg_rock</code></td>
+</tr>
+<tr>
+<td>Кино и места съёмок</td>
+<td><code>cinema_locations</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>Старые <code>Фильмы</code> и <code>ТВ</code> должны перейти сюда.</p>
+<hr>
+<h1 id="10-religiya-i-duhovnoe-nasledie" tabindex="-1">10. Религия и духовное наследие</h1>
+<p><code>code: religion</code></p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Тема</th>
+<th>code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Православие</td>
+<td><code>orthodoxy</code></td>
+</tr>
+<tr>
+<td>Иудаизм</td>
+<td><code>judaism</code></td>
+</tr>
+<tr>
+<td>Ислам</td>
+<td><code>islam</code></td>
+</tr>
+<tr>
+<td>Буддизм</td>
+<td><code>buddhism</code></td>
+</tr>
+<tr>
+<td>Религиозная архитектура</td>
+<td><code>religious_architecture</code></td>
+</tr>
+</tbody>
+</table></div>
+<p><code>Индуизм</code> убрать из пользовательского интерфейса на первом этапе.</p>
+<hr>
+<h1 id="11-neobychnyj-peterburg" tabindex="-1">11. Необычный Петербург</h1>
+<p><code>code: unusual_petersburg</code></p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Тема</th>
+<th>code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Мистика и городские легенды</td>
+<td><code>mysticism_legends</code></td>
+</tr>
+<tr>
+<td>Тайны и загадки Петербурга</td>
+<td><code>mysteries_secrets</code></td>
+</tr>
+<tr>
+<td>Скрытый и подземный Петербург</td>
+<td><code>hidden_petersburg</code></td>
+</tr>
+</tbody>
+</table></div>
+<p><code>Призраки/привидения</code> объединяются с <code>Мистика и городские легенды</code>.</p>
+<hr>
+<h1 id="12-gastronomiya" tabindex="-1">12. Гастрономия</h1>
+<p><code>code: gastronomy</code></p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Тема</th>
+<th>code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Петербургская кухня</td>
+<td><code>petersburg_cuisine</code></td>
+</tr>
+<tr>
+<td>Гастрономическая история</td>
+<td><code>gastronomic_history</code></td>
+</tr>
+<tr>
+<td>Кофе и чай</td>
+<td><code>coffee_tea</code></td>
+</tr>
+<tr>
+<td>Бары и питейная культура</td>
+<td><code>bar_culture</code></td>
+</tr>
+<tr>
+<td>Дегустации</td>
+<td><code>tastings</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>Не делать отдельными темами:</p>
+<p>пончик</p>
+<p>мороженое</p>
+<p>шоколад</p>
+<p>сыр</p>
+<p>сладости</p>
+<p>десерт</p>
+<p>выпечка</p>
+<p>Иначе снова получится огромный неуправляемый справочник.</p>
+<hr>
+<h1 id="13-sovremennyj-peterburg" tabindex="-1">13. Современный Петербург</h1>
+<p><code>code: modern_petersburg</code></p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Тема</th>
+<th>code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Современный Петербург</td>
+<td><code>modern_city</code></td>
+</tr>
+<tr>
+<td>Современная архитектура</td>
+<td><code>modern_architecture</code></td>
+</tr>
+<tr>
+<td>Креативные пространства</td>
+<td><code>creative_spaces</code></td>
+</tr>
+<tr>
+<td>Современная городская культура</td>
+<td><code>urban_culture</code></td>
+</tr>
+</tbody>
+</table></div>
+<hr>
+<h1 id="14-nauka-tehnika-i-promyshlennost" tabindex="-1">14. Наука, техника и промышленность</h1>
+<p><code>code: science_technology</code></p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Тема</th>
+<th>code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Наука и изобретения</td>
+<td><code>science_inventions</code></td>
+</tr>
+<tr>
+<td>Промышленная история</td>
+<td><code>industrial_history</code></td>
+</tr>
+<tr>
+<td>Транспорт и железные дороги</td>
+<td><code>transport_railways</code></td>
+</tr>
+<tr>
+<td>Космос и техника</td>
+<td><code>space_technology</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>Эти темы можно сделать не <code>featured</code>, но оставить доступными гидам и авторам экскурсий.</p>
+<h1 id="svyaz-s-profilem-gida" tabindex="-1">Связь с профилем гида</h1>
+<p>Если у всех пользователей есть общий <code>profile_id</code>, лучше:</p>
+<pre><code class="language-sql">CREATE TABLE profile_theme (
+
+    profile_id BIGINT NOT NULL,
+
+    theme_id INT NOT NULL,
+
+    is_primary TINYINT(1) NOT NULL DEFAULT 0,
+
+  
+
+    PRIMARY KEY (profile_id, theme_id)
+
+);
+</code></pre>
+<p>Это позволит в будущем использовать тематики не только для гида, но и для агентства.</p>
+<h1 id="poisk-partnyora-gida" tabindex="-1">Поиск партнёра-гида</h1>
+<p>Здесь единый справочник начинает давать большую пользу.</p>
+<p>Например агентство ищет:</p>
+<p>Язык: английский</p>
+<p>Тематика: Достоевский</p>
+<p>Дата: 14 сентября</p>
+<p>Поиск работает по:</p>
+<p>profile_theme</p>
+<p>Причём можно ранжировать:</p>
+<p>Достоевский is_primary = 1 → максимальный балл</p>
+<p>Достоевский is_primary = 0 → ниже</p>
+<p>Литературный Петербург → ещё ниже</p>
+<p>В будущем это позволит сделать нормальный smart matching.</p>
+<h1 id="26-api" tabindex="-1">26. API</h1>
+<p>Я бы попросил разработчика не отдавать фронтенду просто весь <code>lib_theme</code>.</p>
+<p>Пример:</p>
+<p>GET /api/library/themes?context=tourist_request</p>
+<p>или:</p>
+<p>GET /api/library/themes?context=guide_profile</p>
+<p>Ответ:</p>
+<p>[</p>
+<pre><code class="language-json">  {
+
+    &quot;id&quot;: 100,
+
+    &quot;code&quot;: &quot;architecture_city&quot;,
+
+    &quot;name&quot;: &quot;Архитектура и город&quot;,
+
+    &quot;type&quot;: &quot;group&quot;,
+
+    &quot;children&quot;: [
+
+      {
+
+        &quot;id&quot;: 101,
+
+        &quot;code&quot;: &quot;architecture&quot;,
+
+        &quot;name&quot;: &quot;Архитектура&quot;
+
+      },
+
+      {
+
+        &quot;id&quot;: 102,
+
+        &quot;code&quot;: &quot;courtyards_entrances&quot;,
+
+        &quot;name&quot;: &quot;Дворы и парадные&quot;
+
+      }
+
+    ]
+
+  }
+
+]
+</code></pre>
+<p>Таким образом фронтенд вообще не знает, какие категории надо скрывать — это контролируется БД.</p>
+<h2 id="chto-poluchitsya-v-itoge" tabindex="-1">Что получится в итоге</h2>
+<p>Это позволит использовать <strong>одни и те же данные во всей платформе</strong>:</p>
+<p>Турист<br>
+«Интересует архитектура и Достоевский»<br>
+↓<br>
+Заявка получает theme_id<br>
+↓<br>
+Агентство открывает заявку<br>
+↓<br>
+Поиск партнёров<br>
+↓<br>
+Система находит гидов с этими specialization theme_id<br>
+↓<br>
+Гид имеет экскурсии с теми же theme_id<br>
+↓<br>
+Можно предложить подходящие готовые экскурсии</p>
+</main>
+<script>window.location.hash&&document.getElementById(window.location.hash.slice(1)).classList.add("referred"),window.addEventListener("hashchange",(e=>{const t=e.oldURL.split("#");t[1]&&document.getElementById(t[1]).classList.remove("referred");const n=e.newURL.split("#");n[1]&&document.getElementById(n[1]).classList.add("referred")}),!1);const url_parts=window.location.href.split("#"),url=url_parts[0],referrence=url_parts[1];document.querySelectorAll(".cm-s-obsidian > *[id]").forEach((function(e){e.ondblclick=function(e){const t=url+"#"+e.target.id;navigator.clipboard.writeText(t)}}))</script>
+<script src="https://fastly.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js"></script>
+<script defer="defer">TIMESTAMP_FORMAT="MMM dd, yyyy h:mm a",document.querySelectorAll(".human-date").forEach((function(e){date=e.getAttribute("data-date")||e.innerText,parsed_date=luxon.DateTime.fromISO(date),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromSQL(date)),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromHTML(date)),e.innerHTML=parsed_date.toFormat(TIMESTAMP_FORMAT)}))</script>
+<script>lucide.createIcons({attrs:{class:["svg-icon"]}})</script>
+</body>
+</html>
