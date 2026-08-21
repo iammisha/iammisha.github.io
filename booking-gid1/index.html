@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>страница бронирования, вкладка гид и связь информации с вкладкой обзор, что редактровать и как</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdn.jsdelivr.net/npm/lucide@0.115.0/dist/umd/lucide.min.js"></script>
+<script>window.addEventListener("load",(()=>{document.querySelectorAll(".callout").forEach((e=>{const t=getComputedStyle(e).getPropertyValue("--callout-icon"),l=t&&t.trim().replace(/^lucide-/,"");if(l){const t=e.querySelector(".callout-title");if(t){const e=document.createElement("div"),c=document.createElement("i");e.appendChild(c),c.setAttribute("icon-name",l),e.setAttribute("class","callout-icon"),t.insertBefore(e,t.firstChild)}}})),lucide.createIcons(),Array.from(document.querySelectorAll(".callout.is-collapsible")).forEach((e=>{e.querySelector(".callout-title").addEventListener("click",(t=>{e.classList.contains("is-collapsed")?e.classList.remove("is-collapsed"):e.classList.add("is-collapsed")}))}))}))</script>
+<script async src="https://fastly.jsdelivr.net/npm/force-graph@1.43.0/dist/force-graph.min.js"></script>
+<script async src="https://fastly.jsdelivr.net/npm/@alpinejs/persist@3.11.1/dist/cdn.min.js"></script>
+<script src="https://fastly.jsdelivr.net/npm/alpinejs@3.11.1/dist/cdn.min.js" async></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-okaidia.min.css" integrity="sha512-mIs9kKbaw6JZFfSuo+MovjU+Ntggfoj8RwAmJbVXQ5mkAX5LlgETQEweFPI18humSPHymTb5iikEOKWF7I8ncQ==" crossorigin="anonymous" referrerpolicy="no-referrer" async>
+<script src="https://fastly.jsdelivr.net/npm/whatwg-fetch@3.6.2/dist/fetch.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" async></script>
+<link href="/styles/digital-garden-base.css" rel="stylesheet">
+<link href="/styles/obsidian-base.css" rel="stylesheet">
+<link href="/styles/_theme.5c5ced1a.css" rel="stylesheet">
+<link href="/styles/custom-style.css" rel="stylesheet">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<style></style>
+<style></style>
+</head>
+<body class="theme-dark markdown-preview-view markdown-rendered markdown-preview-section css-settings-manager theme-dark mod-windows is-frameless is-hidden-frameless obsidian-app show-inline-title show-ribbon show-view-header is-maximized minimal-theme minimal-default-dark minimal-default-light colorful-headings colorful-active links-int-on links-ext-on full-width-media img-grid minimal-folding minimal-line-nums minimal-readable minimal-light minimal-dark chart-default-width table-default-width img-default-width iframe-default-width map-default-width outliner-plugin-dnd css-settings-manager callouts-default trim-cols checkbox-circle pdf-seamless-on pdf-invert-dark pdf-blend-light sidebar-tabs-default ribbon-hidden maximize-tables-off tabs-default tab-stack-top minimal-tab-title-hover is-focused">
+<nav class="navbar">
+<div class="navbar-inner">
+<a href="/" style="text-decoration:none">
+<h1 style="margin:15px!important">Digital Garden</h1>
+</a>
+</div>
+</nav>
+<main class="content cm-s-obsidian">
+<header>
+<div class="header-meta">
+</div>
+</header>
+<p>. Оптимальная модель — дать возможность редактировать и само бронирование, и данные приглашения, но это должны быть <strong>два разных уровня информации с разной логикой</strong>.</p>
+<p>Ключевой принцип такой:</p>
+<p><strong>«Обзор» = что заказал и согласовал турист.</strong><br>
+<strong>«Приглашение гиду» = что агентство предлагает конкретному исполнителю и как именно ему нужно выполнить работу.</strong></p>
+<p>Из-за этого значения иногда должны совпадать, а иногда совершенно нормально отличаться.</p>
+<p>Например, турист забронировал экскурсию на <strong>10:00</strong>, но агентство хочет, чтобы гид пришёл к группе в <strong>09:45</strong>. Было бы неправильно менять в бронировании начало экскурсии на 09:45. В приглашении должно появиться отдельное рабочее значение: <code>Встреча гида с группой — 09:45</code>.</p>
+<p>То же с местом. В бронировании турист может указать:</p>
+<blockquote>
+<p>Место встречи: Отель «Парнас»</p>
+</blockquote>
+<p>Но агентство может сказать гиду:</p>
+<blockquote>
+<p>Встретить группу не в лобби, а у стойки concierge.</p>
+</blockquote>
+<p>Это <strong>не изменение заказа туриста</strong>, а инструкция исполнителю.</p>
+<p>Поэтому я бы разделил поля примерно так:</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Поле</th>
+<th>Источник по умолчанию</th>
+<th>Можно менять только в приглашении?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Название экскурсии</td>
+<td>Бронирование</td>
+<td>Да, но редко</td>
+</tr>
+<tr>
+<td>Дата экскурсии</td>
+<td>Бронирование</td>
+<td>Да, но с предупреждением</td>
+</tr>
+<tr>
+<td>Время начала экскурсии</td>
+<td>Бронирование</td>
+<td>Да, но с предупреждением</td>
+</tr>
+<tr>
+<td>Язык</td>
+<td>Бронирование</td>
+<td>Да</td>
+</tr>
+<tr>
+<td>Количество туристов</td>
+<td>Бронирование</td>
+<td>Да, но обычно это изменение бронирования</td>
+</tr>
+<tr>
+<td>Продолжительность</td>
+<td>Бронирование</td>
+<td>Да</td>
+</tr>
+<tr>
+<td>Место встречи туриста</td>
+<td>Бронирование</td>
+<td>Да</td>
+</tr>
+<tr>
+<td>Время встречи гида</td>
+<td>Приглашение</td>
+<td>Да, это отдельное поле</td>
+</tr>
+<tr>
+<td>Инструкции по месту встречи</td>
+<td>Приглашение</td>
+<td>Да</td>
+</tr>
+<tr>
+<td>Способ перемещения</td>
+<td>Бронирование/программа</td>
+<td>Да</td>
+</tr>
+<tr>
+<td>Вознаграждение гиду</td>
+<td>Приглашение</td>
+<td>Только здесь</td>
+</tr>
+<tr>
+<td>Способ оплаты гиду</td>
+<td>Приглашение</td>
+<td>Только здесь</td>
+</tr>
+<tr>
+<td>Срок оплаты</td>
+<td>Приглашение</td>
+<td>Только здесь</td>
+</tr>
+<tr>
+<td>Примечание гиду</td>
+<td>Приглашение</td>
+<td>Только здесь</td>
+</tr>
+<tr>
+<td>Срок ответа на приглашение</td>
+<td>Приглашение</td>
+<td>Только здесь</td>
+</tr>
+</tbody>
+</table></div>
+<p>То есть <strong>зарплата, способ оплаты, срок оплаты, примечание, срок ответа</strong> вообще не должны иметь отношения к вкладке «Обзор».</p>
+<p>А дата, время, язык, количество человек, место встречи и т. п. берутся оттуда автоматически.</p>
+<h3 id="kak-ya-by-sdelal-eto-v-ui" tabindex="-1">Как я бы сделал это в UI</h3>
+<p>Когда менеджер впервые открывает вкладку <code>Гид</code>, форма уже заполнена:</p>
+<p><strong>Информация об экскурсии</strong></p>
+<p><code>Название экскурсии</code><br>
+Большая обзорная экскурсия<br>
+<span>Из бронирования</span></p>
+<p><code>Дата</code><br>
+19.05.2026<br>
+<span>Из бронирования</span></p>
+<p><code>Начало экскурсии</code><br>
+10:00<br>
+<span>Из бронирования</span></p>
+<p><code>Количество туристов</code><br>
+3<br>
+<span>Из бронирования</span></p>
+<p><code>Место встречи</code><br>
+Отель «Парнас»<br>
+<span>Из бронирования</span></p>
+<p>Но поля можно отредактировать через кнопку &quot;Редактировать&quot;</p>
+<p>Менеджер может изменить, например:</p>
+<p><code>Место встречи для гида</code><br>
+<strong>Служебный вход отеля «Парнас»</strong></p>
+<p>После изменения возле поля появляется маленький индикатор:</p>
+<p>в виде какой-то иконки (может быть восклицательный знак) при наведении на который появляется текст - <strong>Изменено для приглашения</strong></p>
+<p>Это очень хорошо объясняет менеджеру, что он не испортил исходные данные.</p>
+<p>Я бы не заставлял каждый раз открывать modal «Вы действительно хотите изменить?». Это быстро станет раздражать.</p>
+<hr>
+<h2 id="a-chto-delat-esli-dejstvitelno-izmenilis-dannye-turista" tabindex="-1">А что делать, если действительно изменились данные туриста?</h2>
+<p>Вот здесь уже нужна возможность редактирования <strong>вкладки «Обзор»</strong>.</p>
+<p>Например турист позвонил агентству:</p>
+<blockquote>
+<p>«Давайте не в 10:00, а в 11:00».</p>
+</blockquote>
+<p>Это настоящее изменение бронирования.</p>
+<p>Менеджер открывает:</p>
+<p><strong>Обзор → Изменить</strong></p>
+<p>и меняет:</p>
+<p>10:00 → <strong>11:00</strong></p>
+<p>После сохранения:</p>
+<blockquote>
+<p>Бронирование изменено<br>
+Время: 10:00 → 11:00<br>
+Изменил: Анна, 21 августа 14:20</p>
+</blockquote>
+<p>То есть я определённо сделал бы <strong>редактирование «Обзора» доступным</strong>.</p>
+<p>Но желательно не превращать его в свободно изменяемую форму без истории.</p>
+<p>Потому что это уже фактически CRM-данные заказа.</p>
+<hr>
+<h3 id="1-yazyk-v-priglashenii-luchshe-ne-redaktirovat-otobrazhat-kak-readonly-polya-s-malenkoj-podpisyu" tabindex="-1">1. Язык — в приглашении лучше НЕ редактировать, отображать как readonly-поля с маленькой подписью:</h3>
+<blockquote>
+<p>Из бронирования</p>
+</blockquote>
+<p>Здесь язык фактически является частью заказа туриста.</p>
+<p>Логика такая:</p>
+<p><strong>Настройки экскурсии</strong><br>
+→ для экскурсии доступны <code>Русский / Английский / Немецкий</code></p>
+<p><strong>Турист при бронировании выбирает</strong><br>
+→ <code>Русский</code></p>
+<p><strong>Бронирование / Обзор</strong><br>
+→ Язык: <code>Русский</code></p>
+<p><strong>Приглашение гиду</strong><br>
+→ Язык: <code>Русский</code></p>
+<p>Не вижу нормального рабочего сценария, когда агентство должно отправить гиду:</p>
+<blockquote>
+<p>Язык проведения: Английский</p>
+</blockquote>
+<p>при том что в бронировании продолжает существовать:</p>
+<blockquote>
+<p>Язык: Русский.</p>
+</blockquote>
+<p>Это уже не инструкция исполнителю, а <strong>изменение условий бронирования</strong>.</p>
+<p>Поэтому я бы сделал:</p>
+<p><strong>Язык</strong><br>
+<code>Русский</code> 🔒<br>
+<em>Выбран туристом при бронировании</em></p>
+<p>И никаких dropdown внутри приглашения.</p>
+<p>Если менеджеру действительно нужно поменять язык, рядом можно дать маленькую ссылку:</p>
+<p><code>Изменить в бронировании</code></p>
+<p>Тогда меняется source of truth в <code>Обзоре</code>, и если приглашение ещё не отправлено — новое значение автоматически появляется в форме.</p>
+<p>Если приглашение уже отправлено, тогда это уже изменение условий, о котором гид должен узнать отдельно.</p>
+<h4 id="dazhe-esli-vybran-drugoj-gid" tabindex="-1">Даже если выбран другой гид</h4>
+<p>Это не должно менять язык.</p>
+<p>Если турист выбрал немецкий, а выбранный агентством гид не работает на немецком — система должна сказать:</p>
+<blockquote>
+<p>⚠ Иван Петров не указал немецкий язык в профиле.</p>
+</blockquote>
+<p>а не позволять менеджеру превратить заказ в русский.</p>
+<p>Это даже можно использовать как контроль ошибки при выборе исполнителя.</p>
+<h3 id="edinstvennoe-isklyuchenie-mnogodnevnoe-bronirovanie" tabindex="-1">Единственное исключение — многодневное бронирование</h3>
+<p>Вот тут дата в приглашении действительно может потребовать выбора, но не произвольного.</p>
+<p>Например программа туриста:</p>
+<ul>
+<li>24 июня — обзорная экскурсия;</li>
+<li>25 июня — Петергоф;</li>
+<li>26 июня — Эрмитаж.</li>
+</ul>
+<p>Агентство приглашает разных гидов на разные дни.</p>
+<p>Тогда поле должно быть:</p>
+<p><strong>Дата выполнения</strong><br>
+<code>25 июня 2026 ▼</code></p>
+<p>но dropdown содержит <strong>только даты/дни программы этого бронирования</strong>, а не календарь.</p>
+<p>Ещё лучше — сначала менеджер выбирает:</p>
+<blockquote>
+<p><strong>День программы</strong><br>
+День 2 · 25 июня · Петергоф</p>
+</blockquote>
+<p>и дата подтягивается автоматически.</p>
+<p>Поэтому я бы зафиксировал разработчику правило:</p>
+<ul>
+<li><strong>однодневное бронирование → дата приглашения readonly;</strong></li>
+<li><strong>многодневное бронирование → можно выбрать только день/дату из программы бронирования;</strong></li>
+<li><strong>нужно перенести экскурсию на другую дату → сначала меняется бронирование, а не приглашение.</strong></li>
+</ul>
+<h1 id="2-sposob-peremeshheniya-situacziya-drugaya-eto-vidimo-dl-ya-art-yo-ma-ch-ast-t-e-nu-zh-no-budet-brat-dannye-ne-iz-ekskursii-a-iz-bronirovani-ya" tabindex="-1">2. Способ перемещения — ситуация другая (ЭТО ВИДИМО ДЛЯ АРТЁМА ЧАСТЬ Т.Е. НУЖНО БУДЕТ БРАТЬ ДАННЫЕ НЕ ИЗ ЭКСКУРСИИ А ИЗ БРОНИРОВАНИЯ)</h1>
+<p>Здесь редактирование <strong>может иметь смысл</strong>, но сначала я бы немного изменил архитектуру источника данных.</p>
+<p>Сейчас вы говорите:</p>
+<blockquote>
+<p>Способ перемещения находится в настройках экскурсии и оттуда подгружается в приглашение.</p>
+</blockquote>
+<p>Я бы сделал промежуточный шаг:</p>
+<p><strong>Настройки экскурсии → при создании бронирования копируются в Booking → Invitation берёт значение из Booking.</strong></p>
+<p>То есть не:</p>
+<p><code>Excursion Settings → Invitation</code></p>
+<p>а:</p>
+<p><code>Excursion Settings → Booking snapshot → Invitation</code></p>
+<p>Почему это важно?</p>
+<p>Допустим сегодня экскурсия настроена:</p>
+<blockquote>
+<p>Способ перемещения: Пешком</p>
+</blockquote>
+<p>Турист забронировал её.</p>
+<p>Через месяц агентство поменяло настройки экскурсии на:</p>
+<blockquote>
+<p>Автомобиль</p>
+</blockquote>
+<p>Старое бронирование не должно внезапно превратиться из пешего в автомобильное.</p>
+<p>Поэтому в момент бронирования нужно зафиксировать:</p>
+<blockquote>
+<p>booking.movement_type = WALKING</p>
+</blockquote>
+<hr>
+<h2 id="a-eto-dlya-tebya-timur-nuzhno-li-ego-menyat-imenno-v-priglashenii" tabindex="-1">А это для тебя, Тимур. Нужно ли его менять именно в приглашении?</h2>
+<p>Здесь возможны реальные сценарии.</p>
+<p>Например изначально экскурсия:</p>
+<blockquote>
+<p>Пешком</p>
+</blockquote>
+<p>Но для конкретной группы агентство решило:</p>
+<blockquote>
+<p>часть маршрута провести на автомобиле.</p>
+</blockquote>
+<p>Или:</p>
+<blockquote>
+<p>Автомобиль</p>
+</blockquote>
+<p>но конкретная группа будет с отдельным транспортом, поэтому гиду нужно сообщить:</p>
+<blockquote>
+<p>Микроавтобус.</p>
+</blockquote>
+<p>Такое изменение <strong>возможно</strong>.</p>
+<p>Сделать отображение вариантов передвижения в виде тэгов с возможностью удаления и добавления вариантов.</p>
+<hr>
+<h1 id="sejchas-eto-nevazhno-no-dlya-ponimaniya-na-budushhee-potomu-chto-etim-zajmyomsya-srazu-posle-togo-kak-utryasem-vsyo-s-etoj-formoj-priglasheniya-chto-proishodit-s-priglasheniyami-posle-izmeneniya-bronirovaniya" tabindex="-1">Сейчас это неважно, но для понимания на будущее, потому что этим займёмся сразу после того как утрясем всё с этой формой приглашения — что происходит с приглашениями после изменения бронирования</h1>
+<p>Здесь нужен чёткий lifecycle.</p>
+<p>Если приглашение ещё <strong>не отправлено</strong>, всё просто:</p>
+<blockquote>
+<p>данные формы автоматически обновляются из бронирования.</p>
+</blockquote>
+<p>Если приглашение уже <strong>отправлено</strong>, нельзя молча менять то, что гид уже видел.</p>
+<p>Например гид получил:</p>
+<blockquote>
+<p>19 мая · 10:00</p>
+</blockquote>
+<p>а менеджер после этого изменил бронирование на:</p>
+<blockquote>
+<p>19 мая · 11:00</p>
+</blockquote>
+<p>В карточке приглашения должно появиться:</p>
+<p>🟠 <strong>Бронирование изменилось</strong></p>
+<blockquote>
+<p>Время экскурсии изменено<br>
+10:00 → 11:00</p>
+</blockquote>
+<p><code>Обновить приглашение</code></p>
+<p>И после действия гид получает новое уведомление:</p>
+<blockquote>
+<p>Агентство изменило условия приглашения.</p>
+</blockquote>
+<p>Если гид уже <strong>принял приглашение и создан заказ</strong>, ситуация ещё серьёзнее.</p>
+<p>Тогда нельзя просто переписать заказ.</p>
+<p>Нужна логика:</p>
+<p><strong>Бронирование изменилось → требуется обновление заказа исполнителю.</strong></p>
+<p>Например:</p>
+<blockquote>
+<p>⚠ Время в бронировании изменено<br>
+Было: 10:00<br>
+Стало: 11:00</p>
+<p>Заказ гиду <a class="tag" onclick="toggleTagSearch(this)" data-content="#G-3846">#G-3846</a> пока содержит 10:00.</p>
+</blockquote>
+<p><code>Предложить изменение гиду</code></p>
+<p>И гид подтверждает новые условия.</p>
+<p>Это особенно важно, если изменились:</p>
+<ul>
+<li>дата;</li>
+<li>время;</li>
+<li>продолжительность;</li>
+<li>стоимость работы;</li>
+<li>язык.</li>
+</ul>
+<hr>
+<h2 id="v-itoge-ya-by-zafiksiroval-pravilo-dlya-razrabotchika" tabindex="-1">В итоге я бы зафиксировал правило для разработчика</h2>
+<p><strong>1. Бронирование — master/source of truth для туристического заказа.</strong></p>
+<p>Из него в приглашение копируются:</p>
+<p>дата, начало, продолжительность, язык, количество туристов, название экскурсии, место встречи и другие данные программы.</p>
+<p><strong>2. Приглашение хранит snapshot этих данных.</strong></p>
+<p>После отправки это уже самостоятельный документ с теми условиями, которые реально увидел гид.</p>
+<p><strong>3. Менеджер может делать override в приглашении.</strong></p>
+<p>При этом бронирование не меняется.</p>
+<p>UI показывает:</p>
+<p><code>Из бронирования</code> → <code>Изменено для приглашения</code>.</p>
+<p><strong>4. Если изменился сам заказ туриста — редактируем «Обзор».</strong></p>
+<p>Все изменения логируются.</p>
+<p><strong>5. Отправленные приглашения и созданные заказы не переписываются автоматически.</strong></p>
+<p>Платформа показывает расхождение и предлагает обновить исполнителя.</p>
+</main>
+<script>window.location.hash&&document.getElementById(window.location.hash.slice(1)).classList.add("referred"),window.addEventListener("hashchange",(e=>{const t=e.oldURL.split("#");t[1]&&document.getElementById(t[1]).classList.remove("referred");const n=e.newURL.split("#");n[1]&&document.getElementById(n[1]).classList.add("referred")}),!1);const url_parts=window.location.href.split("#"),url=url_parts[0],referrence=url_parts[1];document.querySelectorAll(".cm-s-obsidian > *[id]").forEach((function(e){e.ondblclick=function(e){const t=url+"#"+e.target.id;navigator.clipboard.writeText(t)}}))</script>
+<script src="https://fastly.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js"></script>
+<script defer="defer">TIMESTAMP_FORMAT="MMM dd, yyyy h:mm a",document.querySelectorAll(".human-date").forEach((function(e){date=e.getAttribute("data-date")||e.innerText,parsed_date=luxon.DateTime.fromISO(date),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromSQL(date)),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromHTML(date)),e.innerHTML=parsed_date.toFormat(TIMESTAMP_FORMAT)}))</script>
+<script>lucide.createIcons({attrs:{class:["svg-icon"]}})</script>
+</body>
+</html>
