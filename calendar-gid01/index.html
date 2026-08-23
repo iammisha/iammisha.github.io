@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>СТРАНИЦА ПО КЛИКУ НА ИКОНКУ КАЛЕНДАРЯ В ВЕРХНЕМ МЕНЮ</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdn.jsdelivr.net/npm/lucide@0.115.0/dist/umd/lucide.min.js"></script>
+<script>window.addEventListener("load",(()=>{document.querySelectorAll(".callout").forEach((e=>{const t=getComputedStyle(e).getPropertyValue("--callout-icon"),l=t&&t.trim().replace(/^lucide-/,"");if(l){const t=e.querySelector(".callout-title");if(t){const e=document.createElement("div"),c=document.createElement("i");e.appendChild(c),c.setAttribute("icon-name",l),e.setAttribute("class","callout-icon"),t.insertBefore(e,t.firstChild)}}})),lucide.createIcons(),Array.from(document.querySelectorAll(".callout.is-collapsible")).forEach((e=>{e.querySelector(".callout-title").addEventListener("click",(t=>{e.classList.contains("is-collapsed")?e.classList.remove("is-collapsed"):e.classList.add("is-collapsed")}))}))}))</script>
+<script async src="https://fastly.jsdelivr.net/npm/force-graph@1.43.0/dist/force-graph.min.js"></script>
+<script async src="https://fastly.jsdelivr.net/npm/@alpinejs/persist@3.11.1/dist/cdn.min.js"></script>
+<script src="https://fastly.jsdelivr.net/npm/alpinejs@3.11.1/dist/cdn.min.js" async></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-okaidia.min.css" integrity="sha512-mIs9kKbaw6JZFfSuo+MovjU+Ntggfoj8RwAmJbVXQ5mkAX5LlgETQEweFPI18humSPHymTb5iikEOKWF7I8ncQ==" crossorigin="anonymous" referrerpolicy="no-referrer" async>
+<script src="https://fastly.jsdelivr.net/npm/whatwg-fetch@3.6.2/dist/fetch.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" async></script>
+<link href="/styles/digital-garden-base.css" rel="stylesheet">
+<link href="/styles/obsidian-base.css" rel="stylesheet">
+<link href="/styles/_theme.5c5ced1a.css" rel="stylesheet">
+<link href="/styles/custom-style.css" rel="stylesheet">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<style></style>
+<style></style>
+</head>
+<body class="theme-dark markdown-preview-view markdown-rendered markdown-preview-section css-settings-manager theme-dark mod-windows is-frameless is-hidden-frameless obsidian-app show-inline-title show-ribbon show-view-header is-maximized minimal-theme minimal-default-dark minimal-default-light colorful-headings colorful-active links-int-on links-ext-on full-width-media img-grid minimal-folding minimal-line-nums minimal-readable minimal-light minimal-dark chart-default-width table-default-width img-default-width iframe-default-width map-default-width outliner-plugin-dnd css-settings-manager callouts-default trim-cols checkbox-circle pdf-seamless-on pdf-invert-dark pdf-blend-light sidebar-tabs-default ribbon-hidden maximize-tables-off tabs-default tab-stack-top minimal-tab-title-hover is-focused">
+<nav class="navbar">
+<div class="navbar-inner">
+<a href="/" style="text-decoration:none">
+<h1 style="margin:15px!important">Digital Garden</h1>
+</a>
+</div>
+</nav>
+<main class="content cm-s-obsidian">
+<header>
+<div class="header-meta">
+</div>
+</header>
+<p>Клик по дню</p>
+<p>Например, гид кликает 20 августа.</p>
+<p>Открывается обычное <strong>Bootstrap modal/offcanvas</strong>, а это уже штатный компонент Limitless/Bootstrap. Limitless основан на Bootstrap 5 и поддерживает и modals, и offcanvas.</p>
+<p>Внутри:</p>
+<p>Доступность на 20 августа</p>
+<p>Статус</p>
+<p>(●) Доступен<br>
+( ) Частично доступен<br>
+( ) Недоступен</p>
+<p>[ Сохранить ]</p>
+<p>Если выбрать Частично доступен, появляется:</p>
+<p>Свободное время</p>
+<p>С До<br>
+[ 10:00 ] [ 14:00 ]</p>
+<p>[ Сохранить ]</p>
+<p>И здесь как раз нет необходимости делать время «текстом».</p>
+<p>Это должны быть <strong>настоящие поля времени</strong>. Самый простой вариант для разработчика — HTML input type=&quot;time&quot; со стилем .form-control. В базе сохраняются реальные значения вроде 10:00 и 14:00, а не строка «10–14».</p>
+<p>Limitless также имеет date/time picker с timePicker, поддержкой 24-часового формата и шага минут, если разработчик захочет использовать именно плагин.</p>
+<p>Но для этого сценария я бы даже <strong>не использовал сложный picker</strong>. Два обычных time-input надежнее и проще.</p>
+<hr>
+<p>Я бы немного изменил сами статусы</p>
+<p>В предыдущих мокапах было:</p>
+<p><strong>Доступен / Частично / Занят</strong></p>
+<p>Теперь я бы заменил Занят на:</p>
+<p><strong>Доступен / Частично доступен / Недоступен</strong></p>
+<p>Потому что Занят лучше оставить за системой.</p>
+<p>Например:</p>
+<p>гид вручную указал день как <strong>Доступен</strong>;</p>
+<p>потом на 12:00 появился подтвержденный заказ.</p>
+<p>Система показывает внутри этого дня:</p>
+<p><strong>1 бронирование</strong></p>
+<p>Но не делает вид, будто гид сам установил состояние Занят.</p>
+<p>Это позволит в будущем отличить:</p>
+<p><strong>🔴 Недоступен</strong> — гид сам закрыл день.</p>
+<p><strong>🔵 1 бронь</strong> — время занято системой.</p>
+<p>Это принципиально полезное разделение.</p>
+<hr>
+<p>А точное время FullCalendar действительно умеет отображать</p>
+<p>Здесь нашел ещё одно хорошее решение.</p>
+<p>В Limitless штатный FullCalendar уже показывает не только месяц, но также:</p>
+<p><strong>Month | Week | Day</strong></p>
+<p>потому что пример шаблона включает dayGridMonth, timeGridWeek и timeGridDay.</p>
+<p>Поэтому я бы не пытался превращать месячный календарь в почасовой.</p>
+<p>В Месяц:</p>
+<p>20 августа — 🟠 Частично доступен</p>
+<p>А если перейти на Неделя, FullCalendar уже имеет нормальную временную сетку:</p>
+<p>ПН ВТ СР ЧТ ПТ</p>
+<p>09:00<br>
+10:00 ┌──────────────┐<br>
+11:00 │ Доступен │<br>
+12:00 │ │<br>
+13:00 │ 10:00–14:00 │<br>
+14:00 └──────────────┘<br>
+15:00<br>
+16:00</p>
+<p>FullCalendar умеет отображать временные события и background events, поэтому такие интервалы можно визуализировать штатными средствами, особенно в timeGridWeek/timeGridDay.</p>
+<p>То есть у нас получается намного более реалистичная схема:</p>
+<p><strong>Месяц = обзор состояния дней.</strong></p>
+<p><strong>Неделя = реальное время.</strong></p>
+<p><strong>Форма = изменение данных.</strong></p>
+<p>И не требуется делать необычный календарь собственного производства.</p>
+<hr>
+<p>Для MVP я бы даже ограничил частичную доступность одним интервалом</p>
+<p>Например:</p>
+<p><strong>10:00 → 14:00</strong></p>
+<p>а не сразу:</p>
+<p>10:00–14:00<br>
+17:00–21:00</p>
+<ul>
+<li>добавить интервал.</li>
+</ul>
+<p>Технически несколько интервалов сделать можно. Но сейчас я бы <strong>не усложнял интерфейс</strong>.</p>
+<p>При этом базу разработчику стоит сразу сделать как day → availability_intervals, чтобы позже можно было разрешить несколько интервалов без изменения архитектуры.</p>
+<p>То есть UI MVP показывает один интервал, но модель данных не должна быть «одно поле start + одно поле end навсегда».</p>
+<hr>
+<p>Я бы построил календарь из трёх независимых слоёв</p>
+<p><strong>1. Базовое состояние.</strong> По умолчанию любой день считается доступным. Гиду вообще не нужно заранее прокликивать месяц зелёным.</p>
+<p><strong>2. Фактическая занятость.</strong> Система сама наносит на календарь уже существующие обязательства:</p>
+<ul>
+<li>подтверждённая бронь — 10:00–14:00;</li>
+<li>принятый заказ агентства — 15:00–18:00;</li>
+<li>транспорт/другая работа, если она требует участия гида;</li>
+<li>входящее предложение агентства можно показывать отдельно, но <strong>оно ещё не занимает время</strong>, пока гид его не принял.</li>
+</ul>
+<p><strong>3. Ручное ограничение доступности.</strong> Только когда гид сам хочет сказать системе: «в этот день я больше не хочу брать работу» или «готов работать только в такой промежуток».</p>
+<hr>
+<p>На странице есть обычный календарь и кнопка:</p>
+<p><strong>[ Редактировать доступность ]</strong></p>
+<p>Пока режим выключен — клики по событиям открывают брони/заказы, а календарь работает как обычный календарь.</p>
+<p>После нажатия:</p>
+<p><strong>Режим редактирования доступности включён</strong><br>
+Выберите день, чтобы изменить доступность.</p>
+<p>Теперь гид нажимает на <strong>23 августа</strong>.</p>
+<p>Открывается окно:</p>
+<p>23 августа</p>
+<p>В этот день уже запланировано</p>
+<p>10:00–14:00 Бронь <a class="tag" onclick="toggleTagSearch(this)" data-content="#B-241">#B-241</a><br>
+Эрмитаж</p>
+<p>────────────────────────</p>
+<p>Моя доступность</p>
+<p>● Без дополнительных ограничений</p>
+<p>○ Доступен только в определённое время</p>
+<p>○ Недоступен весь день</p>
+<p>[Отмена] [Сохранить]</p>
+<p>Если выбирает второй пункт:</p>
+<p>Моя доступность</p>
+<p>○ Без дополнительных ограничений</p>
+<p>● Доступен только в определённое время</p>
+<p>С До<br>
+[14:00] [18:00]</p>
+<p>○ Недоступен весь день</p>
+<p>И вот <strong>14:00–18:00 — ручное решение гида</strong>, а не вывод системы.</p>
+<p>Это существенная разница.</p>
+<hr>
+<p>Я бы даже отказался от статуса «Частично доступен» как от самостоятельной кнопки</p>
+<p>С точки зрения данных лучше иметь:</p>
+<p>Без ограничений</p>
+<p>Гид ничего дополнительно не ограничивает.</p>
+<p>Доступен только</p>
+<p>14:00–18:00</p>
+<p>Недоступен весь день</p>
+<p>А уже календарь сам переводит это в понятные пользователю визуальные статусы:</p>
+<ul>
+<li>🟢 <strong>Доступен</strong></li>
+<li>🟠 <strong>Ограниченная доступность</strong></li>
+<li>🔴 <strong>Недоступен</strong></li>
+<li>🔵 <strong>Есть занятость</strong></li>
+</ul>
+<p>Так меньше путаницы между <strong>занятостью</strong> и <strong>доступностью</strong>.</p>
+<hr>
+<p>Самое важное — занятость и доступность не одно и то же</p>
+<p>Например 23 августа:</p>
+<p>ручная доступность: <strong>без ограничений</strong><br>
+бронь: <strong>10:00–14:00</strong></p>
+<p>Это НЕ должно превращать день в:</p>
+<p>🟠 Частично доступен 14:00–...</p>
+<p>Лучше показывать:</p>
+<p><strong>🟢 Доступен</strong><br>
+🔵 Бронь 10:00–14:00</p>
+<p>То есть человек видит: гид в принципе готов брать работу, просто определённое время уже занято.</p>
+<p>Другой случай:</p>
+<p>бронь 10:00–14:00<br>
+гид вручную поставил «доступен только 14:00–18:00»</p>
+<p>Тогда:</p>
+<p><strong>🟠 Доступен 14:00–18:00</strong><br>
+🔵 Бронь 10:00–14:00</p>
+<p>А третий:</p>
+<p>гид поставил «недоступен весь день»</p>
+<p>Тогда:</p>
+<p><strong>🔴 Недоступен</strong><br>
+🔵 Бронь 10:00–14:00</p>
+<p>Бронь всё равно отображается — установка недоступности ничего с существующей бронью не делает.</p>
+<hr>
+<p>Что происходит с предложениями агентств</p>
+<p>Здесь я бы ввёл ещё одно визуальное состояние.</p>
+<p>Например:</p>
+<p><strong>23 августа</strong></p>
+<p>10:00–14:00 🔵 Бронь · Эрмитаж</p>
+<p>16:00–18:00 🟣 Предложение агентства<br>
+Ожидает ответа</p>
+<p>Предложение <strong>не блокирует время</strong>, пока гид его не принял.</p>
+<p>После Принять:</p>
+<p>16:00–18:00 🔵 Заказ <a class="tag" onclick="toggleTagSearch(this)" data-content="#1241">#1241</a></p>
+<p>и оно становится реальной занятостью.</p>
+<p>Так календарь одновременно становится очень полезной оперативной страницей.</p>
+<hr>
+<p>И здесь появляется действительно хороший сценарий конфликта</p>
+<p>Например гид уже имеет:</p>
+<p>Бронь 10:00–14:00</p>
+<p>А агентство присылает работу:</p>
+<p>12:00–16:00.</p>
+<p>Предложение можно показать, но при открытии:</p>
+<p>⚠ <strong>Есть пересечение с существующей бронью 10:00–14:00</strong></p>
+<p>Это намного полезнее, чем просто запрещать агентству отправлять предложение.</p>
+<hr>
+<p><img src="/img/user/files/Pasted%20image%2020260823110026.png" alt="Pasted image 20260823110026.png"><br>
+<img src="/img/user/files/Pasted%20image%2020260823110046.png" alt="Pasted image 20260823110046.png"></p>
+</main>
+<script>window.location.hash&&document.getElementById(window.location.hash.slice(1)).classList.add("referred"),window.addEventListener("hashchange",(e=>{const t=e.oldURL.split("#");t[1]&&document.getElementById(t[1]).classList.remove("referred");const n=e.newURL.split("#");n[1]&&document.getElementById(n[1]).classList.add("referred")}),!1);const url_parts=window.location.href.split("#"),url=url_parts[0],referrence=url_parts[1];document.querySelectorAll(".cm-s-obsidian > *[id]").forEach((function(e){e.ondblclick=function(e){const t=url+"#"+e.target.id;navigator.clipboard.writeText(t)}}))</script>
+<script src="https://fastly.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js"></script>
+<script defer="defer">TIMESTAMP_FORMAT="MMM dd, yyyy h:mm a",document.querySelectorAll(".human-date").forEach((function(e){date=e.getAttribute("data-date")||e.innerText,parsed_date=luxon.DateTime.fromISO(date),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromSQL(date)),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromHTML(date)),e.innerHTML=parsed_date.toFormat(TIMESTAMP_FORMAT)}))</script>
+<script>lucide.createIcons({attrs:{class:["svg-icon"]}})</script>
+</body>
+</html>
