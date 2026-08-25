@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>форма создания агентства</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdn.jsdelivr.net/npm/lucide@0.115.0/dist/umd/lucide.min.js"></script>
+<script>window.addEventListener("load",(()=>{document.querySelectorAll(".callout").forEach((e=>{const t=getComputedStyle(e).getPropertyValue("--callout-icon"),l=t&&t.trim().replace(/^lucide-/,"");if(l){const t=e.querySelector(".callout-title");if(t){const e=document.createElement("div"),c=document.createElement("i");e.appendChild(c),c.setAttribute("icon-name",l),e.setAttribute("class","callout-icon"),t.insertBefore(e,t.firstChild)}}})),lucide.createIcons(),Array.from(document.querySelectorAll(".callout.is-collapsible")).forEach((e=>{e.querySelector(".callout-title").addEventListener("click",(t=>{e.classList.contains("is-collapsed")?e.classList.remove("is-collapsed"):e.classList.add("is-collapsed")}))}))}))</script>
+<script async src="https://fastly.jsdelivr.net/npm/force-graph@1.43.0/dist/force-graph.min.js"></script>
+<script async src="https://fastly.jsdelivr.net/npm/@alpinejs/persist@3.11.1/dist/cdn.min.js"></script>
+<script src="https://fastly.jsdelivr.net/npm/alpinejs@3.11.1/dist/cdn.min.js" async></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-okaidia.min.css" integrity="sha512-mIs9kKbaw6JZFfSuo+MovjU+Ntggfoj8RwAmJbVXQ5mkAX5LlgETQEweFPI18humSPHymTb5iikEOKWF7I8ncQ==" crossorigin="anonymous" referrerpolicy="no-referrer" async>
+<script src="https://fastly.jsdelivr.net/npm/whatwg-fetch@3.6.2/dist/fetch.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" async></script>
+<link href="/styles/digital-garden-base.css" rel="stylesheet">
+<link href="/styles/obsidian-base.css" rel="stylesheet">
+<link href="/styles/_theme.5c5ced1a.css" rel="stylesheet">
+<link href="/styles/custom-style.css" rel="stylesheet">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<style></style>
+<style></style>
+</head>
+<body class="theme-dark markdown-preview-view markdown-rendered markdown-preview-section css-settings-manager theme-dark mod-windows is-frameless is-hidden-frameless obsidian-app show-inline-title show-ribbon show-view-header is-maximized minimal-theme minimal-default-dark minimal-default-light colorful-headings colorful-active links-int-on links-ext-on full-width-media img-grid minimal-folding minimal-line-nums minimal-readable minimal-light minimal-dark chart-default-width table-default-width img-default-width iframe-default-width map-default-width outliner-plugin-dnd css-settings-manager callouts-default trim-cols checkbox-circle pdf-seamless-on pdf-invert-dark pdf-blend-light sidebar-tabs-default ribbon-hidden maximize-tables-off tabs-default tab-stack-top minimal-tab-title-hover is-focused">
+<nav class="navbar">
+<div class="navbar-inner">
+<a href="/" style="text-decoration:none">
+<h1 style="margin:15px!important">Digital Garden</h1>
+</a>
+</div>
+</nav>
+<main class="content cm-s-obsidian">
+<header>
+<div class="header-meta">
+</div>
+</header>
+<p>link: <a href="http://iammisha.githab.io/forma-agentstvo" target="_blank" class="external-link">iammisha.githab.io/forma-agentstvo</a></p>
+<p>Я бы не делал бинарную модель «обязательное / необязательное» для всей формы. Здесь лучше разделить <strong>создание агентства</strong> и <strong>публикацию партнёрского профиля</strong>. Иначе пользователь при нажатии «Добавить агентство» получит огромную форму с красными <code>*</code> и будет вынужден заполнять всё сразу.</p>
+<p>Оптимальная логика для MVP:</p>
+<p><strong>агентство можно создать почти пустым → заполнить постепенно → для публикации в каталоге требуется минимальный набор данных.</strong></p>
+<h3 id="chto-ya-by-zafiksiroval-razrabotchiku" tabindex="-1">Что я бы зафиксировал разработчику</h3>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Поле</th>
+<th>Создание агентства</th>
+<th>Публикация профиля</th>
+<th>Комментарий</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Название агентства</strong></td>
+<td><strong>обязательно</strong></td>
+<td><strong>обязательно</strong></td>
+<td>Главный идентификатор бренда</td>
+</tr>
+<tr>
+<td><strong>Логотип</strong></td>
+<td>нет</td>
+<td>нет</td>
+<td>Если нет — системная заглушка/инициалы</td>
+</tr>
+<tr>
+<td><strong>Тип агентства</strong></td>
+<td>нет</td>
+<td><strong>обязательно</strong></td>
+<td>Турагентство / туроператор / DMC и т. д.</td>
+</tr>
+<tr>
+<td><strong>Год основания</strong></td>
+<td>нет</td>
+<td>нет</td>
+<td>Полезная информация, но нельзя блокировать публикацию</td>
+</tr>
+<tr>
+<td><strong>Основной город</strong></td>
+<td>нет</td>
+<td><strong>обязательно</strong></td>
+<td>Нужен для каталога, поиска и matching</td>
+</tr>
+<tr>
+<td><strong>География работы</strong></td>
+<td>нет</td>
+<td>нет</td>
+<td>Дополнение к основному городу</td>
+</tr>
+<tr>
+<td><strong>Описание агентства</strong></td>
+<td>нет</td>
+<td><strong>обязательно</strong></td>
+<td>Без него профиль выглядит пустым и непонятно, чем занимается компания</td>
+</tr>
+<tr>
+<td><strong>Типы туристов / групп</strong></td>
+<td>нет</td>
+<td><strong>обязательно: минимум 1</strong></td>
+<td>Один из ключевых признаков для гида</td>
+</tr>
+<tr>
+<td><strong>Языки работы</strong></td>
+<td>нет</td>
+<td><strong>обязательно: минимум 1</strong></td>
+<td>Важный параметр поиска и matching</td>
+</tr>
+<tr>
+<td><strong>Основные направления / тематики</strong></td>
+<td>нет</td>
+<td><strong>обязательно: минимум 1</strong></td>
+<td>Показывает характер работы агентства</td>
+</tr>
+<tr>
+<td><strong>Основные объекты</strong></td>
+<td>нет</td>
+<td>нет</td>
+<td>Полезное дополнение, но не должно мешать публикации</td>
+</tr>
+<tr>
+<td><strong>Кого ищем среди партнёров</strong></td>
+<td>нет</td>
+<td><strong>обязательно: минимум 1</strong></td>
+<td>Для партнёрского профиля это важная информация</td>
+</tr>
+<tr>
+<td><strong>Особенно интересующие языки партнёров</strong></td>
+<td>нет</td>
+<td>нет</td>
+<td>Дополнительный фильтр</td>
+</tr>
+<tr>
+<td><strong>Особенно интересующие направления</strong></td>
+<td>нет</td>
+<td>нет</td>
+<td>Дополнительный фильтр</td>
+</tr>
+<tr>
+<td><strong>Сайт</strong></td>
+<td>нет</td>
+<td>нет</td>
+<td>Не у всех есть</td>
+</tr>
+<tr>
+<td><strong>Общий email</strong></td>
+<td>нет</td>
+<td>нет</td>
+<td>У аккаунта email уже есть; публичный может быть другим</td>
+</tr>
+<tr>
+<td><strong>Телефон</strong></td>
+<td>нет</td>
+<td>нет</td>
+<td>После партнёрства</td>
+</tr>
+<tr>
+<td><strong>Telegram</strong></td>
+<td>нет</td>
+<td>нет</td>
+<td>После партнёрства</td>
+</tr>
+<tr>
+<td><strong>Контактное лицо</strong></td>
+<td>нет</td>
+<td>нет</td>
+<td>После партнёрства</td>
+</tr>
+<tr>
+<td><strong>Социальные сети</strong></td>
+<td>нет</td>
+<td>нет</td>
+<td>Дополнительное доверие</td>
+</tr>
+<tr>
+<td><strong>Условия / тарифы сотрудничества</strong></td>
+<td>—</td>
+<td>—</td>
+<td>В MVP вообще не вводим</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="to-est-realno-obyazatelnyh-dlya-publikaczii-nemnogo" tabindex="-1">То есть реально обязательных для публикации немного</h3>
+<p>Я бы поставил красную <code>*</code> только возле:</p>
+<p><strong>Название агентства</strong>*<br>
+<strong>Тип агентства</strong>*<br>
+<strong>Основной город</strong>*<br>
+<strong>Описание агентства</strong>*<br>
+<strong>Типы туристов / групп</strong>* — выбрать хотя бы один<br>
+<strong>Языки работы</strong>* — хотя бы один<br>
+<strong>Основные направления</strong>* — хотя бы одно<br>
+<strong>Кого ищем среди партнёров</strong>* — хотя бы один вариант</p>
+<p>Получается 8 смысловых требований, но четыре из них — простой выбор chips/checkboxes, а не ввод текста.</p>
+<hr>
+<h2 id="geografiyu-ya-by-speczialno-ne-delal-obyazatelnoj" tabindex="-1">Географию я бы специально не делал обязательной</h2>
+<p>Есть:</p>
+<blockquote>
+<p>Основной город: Санкт-Петербург</p>
+</blockquote>
+<p>Этого уже достаточно.</p>
+<p>Если агентство работает ещё в Карелии и Ленинградской области — добавит.</p>
+<p>Не стоит заставлять пользователя сначала выбирать Санкт-Петербург как основной город, а потом ещё раз обязательно добавлять Санкт-Петербург в «Географию работы».</p>
+<p>Можно даже автоматически при выборе:</p>
+<p><strong>Основной город: Санкт-Петербург</strong></p>
+<p>считать, что он уже входит в географию.</p>
+<hr>
+<h2 id="god-osnovaniya-tozhe-tolko-optional" tabindex="-1">Год основания тоже только optional</h2>
+<p>С точки зрения доверия это полезно:</p>
+<blockquote>
+<p>Работает с 2014 года</p>
+</blockquote>
+<p>Но не стоит делать его обязательным. Новое агентство, индивидуальный бренд или новая компания вполне могут не захотеть акцентировать внимание на возрасте.</p>
+<p>И главное — отсутствие года не делает профиль функционально неполноценным.</p>
+<hr>
+<h1 id="opisanie-ya-naoborot-sdelal-by-obyazatelnym" tabindex="-1">«Описание» я, наоборот, сделал бы обязательным</h1>
+<p>Хотя обычно SaaS стараются делать textarea необязательными, именно здесь это один из важнейших элементов профиля.</p>
+<p>Без описания получится:</p>
+<blockquote>
+<p>Magic Petersburg<br>
+DMC<br>
+Санкт-Петербург<br>
+English<br>
+Эрмитаж / Петергоф</p>
+</blockquote>
+<p>Это больше похоже на строку каталога, чем на компанию, с которой гид решает сотрудничать.</p>
+<p>Но я бы не требовал огромный текст.</p>
+<p>Например:</p>
+<p><strong>минимум 50 символов, максимум 1000.</strong></p>
+<p>Подсказка:</p>
+<blockquote>
+<p>Кратко расскажите об агентстве, с какими туристами вы работаете и какие программы организуете.</p>
+</blockquote>
+<hr>
+<h1 id="s-kontaktami-est-vazhnoe-razlichie" tabindex="-1">С контактами есть важное различие</h1>
+<p>Я бы <strong>вообще не связывал обязательность публичных контактов с созданием профиля</strong>.</p>
+<p>Потому что контактная информация пользователя/компании у платформы уже должна появляться при регистрации.</p>
+<p>То есть у нас фактически две сущности:</p>
+<p><strong>Внутренние контактные данные</strong> — обязательны для работы платформы.</p>
+<p><strong>Контакты в партнёрском профиле</strong> — необязательны.</p>
+<p>А уже правила видимости:</p>
+<h3 id="do-partnyorstva" tabindex="-1">До партнёрства</h3>
+<p>можно показывать:</p>
+<ul>
+<li>сайт;</li>
+<li>социальные сети;</li>
+<li>общий email — если агентство разрешило.</li>
+</ul>
+<h3 id="posle-partnyorstva" tabindex="-1">После партнёрства</h3>
+<p>открыть:</p>
+<ul>
+<li>телефон;</li>
+<li>рабочий email;</li>
+<li>Telegram;</li>
+<li>контактное лицо.</li>
+</ul>
+<p>И я бы прямо в форме показывал это возле каждого поля:</p>
+<blockquote>
+<p>🔒 Показывается только партнёрам</p>
+</blockquote>
+<p>Это будет намного понятнее.</p>
+<hr>
+<h1 id="kogo-ishhem-ya-by-vsyo-taki-sdelal-obyazatelnym" tabindex="-1">«Кого ищем» я бы всё-таки сделал обязательным</h1>
+<p>Здесь можно спорить, но для вашей платформы я бы выбрал именно этот вариант.</p>
+<p>Потому что если агентство создаёт <strong>партнёрский профиль</strong>, но ничего не сообщает о том, кого хочет видеть среди партнёров, платформа теряет важнейший сигнал для каталога.</p>
+<p>Заполнить это очень легко:</p>
+<blockquote>
+<p>☑ Гиды<br>
+☐ Гиды-переводчики<br>
+☐ Музейные гиды<br>
+☐ Гиды для школьных групп</p>
+</blockquote>
+<p>Минимум один выбор.</p>
+<p>Для большинства агентств дефолтно это будет просто:</p>
+<p><strong>☑ Гиды</strong></p>
+<hr>
+<h1 id="a-vot-osobenno-interesuyut-yazyki-napravleniya-tochno-optional" tabindex="-1">А вот «особенно интересуют языки/направления» — точно optional</h1>
+<p>Это уже уточнение:</p>
+<blockquote>
+<p>вообще ищем гидов, но особенно нужны English/Deutsch и Эрмитаж/Петергоф.</p>
+</blockquote>
+<p>Нельзя заставлять агентство это придумывать.</p>
+<p>Если ничего особенного сейчас не ищут — поля остаются пустыми.</p>
+<hr>
+<h1 id="osnovnye-obekty-tozhe-optional" tabindex="-1">Основные объекты тоже optional</h1>
+<p>Если мы добавляем обсуждавшийся блок:</p>
+<p><strong>Часто работаем с объектами</strong></p>
+<p><code>Эрмитаж</code> <code>Петергоф</code> <code>Русский музей</code></p>
+<p>я бы не ставил <code>*</code>.</p>
+<p>Потому что это улучшение профиля, а не его фундамент.</p>
+<p>Кроме того, позже мы можем предложить их автоматически из <code>Мои объекты</code> и созданных экскурсий.</p>
+<hr>
+<h1 id="ya-by-eshhyo-nemnogo-izmenil-mehaniku-knopok" tabindex="-1">Я бы ещё немного изменил механику кнопок</h1>
+<p>При создании:</p>
+<h3 id="code-sozdat-agentstvo-code" tabindex="-1"><code>[Создать агентство]</code></h3>
+<p>требует фактически только:</p>
+<blockquote>
+<p><strong>Название агентства</strong></p>
+</blockquote>
+<p>После этого пользователь попадает в редактор.</p>
+<p>Там сверху:</p>
+<blockquote>
+<p><strong>Профиль не опубликован · заполнено 35%</strong></p>
+</blockquote>
+<p>И кнопки:</p>
+<p><strong>[Сохранить]</strong><br>
+<strong>[Опубликовать профиль]</strong></p>
+<p><code>Сохранить</code> работает даже при неполной форме.</p>
+<p>А вот при <code>Опубликовать профиль</code> система проверяет обязательные данные:</p>
+<blockquote>
+<p>Для публикации профиля заполните:</p>
+<p>• Тип агентства<br>
+• Основной город<br>
+• Описание<br>
+• Языки работы<br>
+• Основные направления</p>
+</blockquote>
+<p>И рядом можно сделать переход к каждому незаполненному полю.</p>
+<p>Это намного лучше, чем <strong>запретить сохранение формы из-за одного отсутствующего checkbox в самом низу страницы</strong>.</p>
+<hr>
+<h2 id="ya-by-dal-razrabotchiku-imenno-takuyu-biznes-logiku" tabindex="-1">Я бы дал разработчику именно такую бизнес-логику</h2>
+<pre><code>CREATE AGENCY
+↓
+required:
+brand_name
+
+Agency status = draft
+↓
+можно сохранять любое количество раз
+↓
+PUBLISH
+↓
+проверяем:
+brand_name
+agency_type
+main_city
+description
+audience_types &gt;= 1
+languages &gt;= 1
+topics &gt;= 1
+partner_types &gt;= 1
+↓
+всё заполнено
+↓
+Agency status = published
+↓
+появляется в партнёрском каталоге
+</code></pre>
+<p>И ещё полезно иметь:</p>
+<p><code>draft</code> — создаётся/заполняется<br>
+<code>published</code> — виден партнёрам<br>
+<code>hidden</code> — временно скрыт самим агентством</p>
+<p>Это гораздо гибче простой проверки required на HTML-форме.</p>
+<p><strong>Таким образом, красные звёздочки в интерфейсе лучше трактовать как «обязательно для публикации», а не «без этого вообще нельзя сохранить страницу».</strong> Это я бы прямо отдельно объяснил разработчику, потому что именно здесь легко реализовать UX слишком жёстко.</p>
+</main>
+<script>window.location.hash&&document.getElementById(window.location.hash.slice(1)).classList.add("referred"),window.addEventListener("hashchange",(e=>{const t=e.oldURL.split("#");t[1]&&document.getElementById(t[1]).classList.remove("referred");const n=e.newURL.split("#");n[1]&&document.getElementById(n[1]).classList.add("referred")}),!1);const url_parts=window.location.href.split("#"),url=url_parts[0],referrence=url_parts[1];document.querySelectorAll(".cm-s-obsidian > *[id]").forEach((function(e){e.ondblclick=function(e){const t=url+"#"+e.target.id;navigator.clipboard.writeText(t)}}))</script>
+<script src="https://fastly.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js"></script>
+<script defer="defer">TIMESTAMP_FORMAT="MMM dd, yyyy h:mm a",document.querySelectorAll(".human-date").forEach((function(e){date=e.getAttribute("data-date")||e.innerText,parsed_date=luxon.DateTime.fromISO(date),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromSQL(date)),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromHTML(date)),e.innerHTML=parsed_date.toFormat(TIMESTAMP_FORMAT)}))</script>
+<script>lucide.createIcons({attrs:{class:["svg-icon"]}})</script>
+</body>
+</html>
