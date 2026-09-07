@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>работа гида в смете предложения</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdn.jsdelivr.net/npm/lucide@0.115.0/dist/umd/lucide.min.js"></script>
+<script>window.addEventListener("load",(()=>{document.querySelectorAll(".callout").forEach((e=>{const t=getComputedStyle(e).getPropertyValue("--callout-icon"),l=t&&t.trim().replace(/^lucide-/,"");if(l){const t=e.querySelector(".callout-title");if(t){const e=document.createElement("div"),c=document.createElement("i");e.appendChild(c),c.setAttribute("icon-name",l),e.setAttribute("class","callout-icon"),t.insertBefore(e,t.firstChild)}}})),lucide.createIcons(),Array.from(document.querySelectorAll(".callout.is-collapsible")).forEach((e=>{e.querySelector(".callout-title").addEventListener("click",(t=>{e.classList.contains("is-collapsed")?e.classList.remove("is-collapsed"):e.classList.add("is-collapsed")}))}))}))</script>
+<script async src="https://fastly.jsdelivr.net/npm/force-graph@1.43.0/dist/force-graph.min.js"></script>
+<script async src="https://fastly.jsdelivr.net/npm/@alpinejs/persist@3.11.1/dist/cdn.min.js"></script>
+<script src="https://fastly.jsdelivr.net/npm/alpinejs@3.11.1/dist/cdn.min.js" async></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-okaidia.min.css" integrity="sha512-mIs9kKbaw6JZFfSuo+MovjU+Ntggfoj8RwAmJbVXQ5mkAX5LlgETQEweFPI18humSPHymTb5iikEOKWF7I8ncQ==" crossorigin="anonymous" referrerpolicy="no-referrer" async>
+<script src="https://fastly.jsdelivr.net/npm/whatwg-fetch@3.6.2/dist/fetch.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" async></script>
+<link href="/styles/digital-garden-base.css" rel="stylesheet">
+<link href="/styles/obsidian-base.css" rel="stylesheet">
+<link href="/styles/_theme.5c5ced1a.css" rel="stylesheet">
+<link href="/styles/custom-style.css" rel="stylesheet">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<style></style>
+<style></style>
+</head>
+<body class="theme-dark markdown-preview-view markdown-rendered markdown-preview-section css-settings-manager theme-dark mod-windows is-frameless is-hidden-frameless obsidian-app show-inline-title show-ribbon show-view-header is-maximized minimal-theme minimal-default-dark minimal-default-light colorful-headings colorful-active links-int-on links-ext-on full-width-media img-grid minimal-folding minimal-line-nums minimal-readable minimal-light minimal-dark chart-default-width table-default-width img-default-width iframe-default-width map-default-width outliner-plugin-dnd css-settings-manager callouts-default trim-cols checkbox-circle pdf-seamless-on pdf-invert-dark pdf-blend-light sidebar-tabs-default ribbon-hidden maximize-tables-off tabs-default tab-stack-top minimal-tab-title-hover is-focused">
+<nav class="navbar">
+<div class="navbar-inner">
+<a href="/" style="text-decoration:none">
+<h1 style="margin:15px!important">Digital Garden</h1>
+</a>
+</div>
+</nav>
+<main class="content cm-s-obsidian">
+<header>
+<div class="header-meta">
+</div>
+</header>
+<p><a class="tag" onclick="toggleTagSearch(this)" data-content="#tourtoster">#tourtoster</a></p>
+<h3 id="kak-eto-moglo-by-rabotat" tabindex="-1">Как это могло бы работать</h3>
+<p>Менеджер раскрывает:</p>
+<p><strong>Работа гида → Партнёры</strong></p>
+<p>Система уже знает из программы:</p>
+<p><strong>18 августа · русский язык · Санкт-Петербург · 5 часов</strong></p>
+<p>и автоматически анализирует тарифы подходящих гидов платформы:</p>
+<blockquote>
+<p><strong>Ориентир платформы</strong><br>
+На эту дату гиды указывают примерно<br>
+<strong>900–1 500 ₽ / час</strong></p>
+<p>На основе тарифов <strong>24 гидов</strong></p>
+</blockquote>
+<p>Дальше менеджер вводит свою расчетную ставку:</p>
+<p><strong>Ставка для сметы</strong><br>
+<code>1 000 ₽ / час</code></p>
+<p>Система сразу считает:</p>
+<p><strong>5 часов × 1 000 ₽ = 5 000 ₽</strong></p>
+<p>И ниже появляется очень полезная подсказка:</p>
+<blockquote>
+<p>✓ <strong>По такой ставке найдено 8 гидов</strong>, доступных по календарю на эту дату.</p>
+</blockquote>
+<p>Дополнительно:</p>
+<blockquote>
+<p><strong>3 из них — ваши партнёры</strong></p>
+</blockquote>
+<p>Вот последнее особенно хорошо связывает каталог и уже существующие партнёрские отношения.</p>
+<hr>
+<h2 id="ya-by-ne-pisal-prosto-8-gidov-svobodnyh" tabindex="-1">Я бы не писал просто «8 гидов свободных»</h2>
+<p>Лучше чуть точнее:</p>
+<blockquote>
+<p><strong>8 гидов подходят по ставке и доступны по календарю</strong></p>
+</blockquote>
+<p>Потому что система фактически проверяет несколько условий одновременно:</p>
+<ul>
+<li>город;</li>
+<li>язык;</li>
+<li>дату;</li>
+<li>время/длительность, если они уже известны;</li>
+<li>отсутствие занятости в календаре;</li>
+<li>тариф.</li>
+</ul>
+<p>И при этом это всё равно <strong>не означает согласие гида на работу</strong>.</p>
+<p>Поэтому под результатом можно мелко написать:</p>
+<blockquote>
+<p>Доступность и тариф являются ориентировочными. Работа подтверждается гидом после отправки приглашения.</p>
+</blockquote>
+<hr>
+<h1 id="ochen-polezna-dinamika-pri-izmenenii-czeny" tabindex="-1">Очень полезна динамика при изменении цены</h1>
+<p>Вот здесь функция становится действительно интересной.</p>
+<p>Например:</p>
+<p><strong>800 ₽/час</strong></p>
+<blockquote>
+<p>3 подходящих гида</p>
+</blockquote>
+<p><strong>1 000 ₽/час</strong></p>
+<blockquote>
+<p>8 подходящих гидов</p>
+</blockquote>
+<p><strong>1 200 ₽/час</strong></p>
+<blockquote>
+<p>17 подходящих гидов</p>
+</blockquote>
+<p><strong>1 500 ₽/час</strong></p>
+<blockquote>
+<p>23 подходящих гида</p>
+</blockquote>
+<p>Менеджер непосредственно видит связь:</p>
+<p><strong>бюджет ↔ доступность исполнителей.</strong></p>
+<p>Для агентства это уже не просто калькулятор, а инструмент принятия решения.</p>
+<p>Можно даже рядом с полем показывать:</p>
+<blockquote>
+<p><code>−</code> <strong>1 000 ₽/ч</strong> <code>+</code><br>
+<strong>8 гидов доступны</strong></p>
+</blockquote>
+<p>без какого-либо графика.</p>
+<hr>
+<h1 id="no-est-vazhnyj-nyuans-s-logikoj-tarifa-ot-do" tabindex="-1">Но есть важный нюанс с логикой тарифа «от–до»</h1>
+<p>Допустим гид указал:</p>
+<p><strong>1 000–1 500 ₽/час</strong></p>
+<p>Менеджер ставит:</p>
+<p><strong>1 100 ₽/час</strong></p>
+<p>Я бы считал этого гида подходящим.</p>
+<p>Если менеджер ставит:</p>
+<p><strong>900 ₽/час</strong></p>
+<p>— уже нет, потому что предложение ниже заявленной гидом нижней границы.</p>
+<p>Если ставит:</p>
+<p><strong>1 700 ₽/час</strong></p>
+<p>— гид тоже потенциально подходит. Верхняя граница тарифа не должна означать:</p>
+<blockquote>
+<p>«Я откажусь от суммы выше 1 500».</p>
+</blockquote>
+<p>Поэтому для поиска по бюджету основным критерием должна быть <strong>нижняя граница тарифа</strong>.</p>
+<p>То есть фактически:</p>
+<blockquote>
+<p><code>ставка менеджера &gt;= минимальной ставки гида</code></p>
+</blockquote>
+<hr>
+<h1 id="sam-orientir-platformy-tozhe-nelzya-schitat-kak-absolyutnyj-min-max" tabindex="-1">Сам «ориентир платформы» тоже нельзя считать как абсолютный min–max</h1>
+<p>Представим, что у двадцати гидов:</p>
+<p><strong>1 000–1 500 ₽</strong></p>
+<p>а у одного:</p>
+<p><strong>300–500 ₽</strong></p>
+<p>и у одного:</p>
+<p><strong>4 000–6 000 ₽</strong>.</p>
+<p>Показывать менеджеру:</p>
+<blockquote>
+<p><strong>300–6 000 ₽/час</strong></p>
+</blockquote>
+<p>бесполезно.</p>
+<p>Поэтому я бы называл это:</p>
+<h3 id="tipichnyj-diapazon" tabindex="-1">Типичный диапазон</h3>
+<blockquote>
+<p><strong>1 000–1 500 ₽/час</strong></p>
+</blockquote>
+<p>и рассчитывал его по основной массе подходящих тарифов, исключая крайние значения.</p>
+<p>Для MVP разработчикам даже не обязательно сейчас строить сложную статистику. Можно использовать медианные значения или центральный диапазон, а позже улучшить алгоритм.</p>
+<p>Обязательно показывать размер выборки:</p>
+<blockquote>
+<p>На основе тарифов <strong>24 подходящих гидов</strong></p>
+</blockquote>
+<p>Если гидов всего двое, система должна честно сказать:</p>
+<blockquote>
+<p>Недостаточно данных для надежного ориентира.</p>
+</blockquote>
+<hr>
+<h1 id="ya-by-sdelal-blok-primerno-takim" tabindex="-1">Я бы сделал блок примерно таким</h1>
+<pre><code>День 1
+18 августа 2027
+Русский · 5 часов
+
+Источник расчёта
+[ Партнёры ▼ ]
+
+
+ОРИЕНТИР ПЛАТФОРМЫ
+
+Типичная ставка на выбранную дату:
+900–1 500 ₽ / час
+
+На основе тарифов 24 гидов
+Санкт-Петербург · Русский
+
+
+Ставка для расчёта
+[ 1 000 ] ₽ / час
+
+Продолжительность       5 часов
+Стоимость в смете       5 000 ₽
+
+
+✓ 8 гидов подходят по ставке
+  и доступны на эту дату
+
+  3 из них — ваши партнёры
+
+[ Посмотреть подходящих гидов ]
+</code></pre>
+<p>Причём <strong>«Посмотреть подходящих гидов»</strong> я бы уже добавил. Это естественное продолжение.</p>
+<hr>
+<h1 id="chto-proizojdyot-posle-nazhatiya-posmotret-podhodyashhih-gidov" tabindex="-1">Что произойдёт после нажатия «Посмотреть подходящих гидов»</h1>
+<p>Не нужно обязательно уводить пользователя со страницы сметы.</p>
+<p>Можно открыть небольшую боковую панель:</p>
+<h3 id="podhodyashhie-gidy-8" tabindex="-1">Подходящие гиды — 8</h3>
+<p><strong>Анна Петрова</strong><br>
+Ваш партнёр<br>
+RU · EN<br>
+1 000–1 500 ₽/ч<br>
+Свободна</p>
+<p><strong>Иван Соколов</strong><br>
+Ваш партнёр<br>
+RU<br>
+900–1 200 ₽/ч<br>
+Свободен</p>
+<p><strong>Мария Иванова</strong><br>
+Не является вашим партнёром<br>
+RU · FR<br>
+800–1 300 ₽/ч<br>
+Свободна</p>
+<p>И здесь я бы <strong>не заставлял менеджера сразу выбирать человека</strong>.</p>
+<p>Можно дать:</p>
+<p><strong>Выбрать для расчёта</strong></p>
+<p>или просто закрыть панель и оставить расчет без конкретного гида.</p>
+<p>Это важно, потому что смета может составляться за неделю до того, как агентство вообще решит, кого приглашать.</p>
+<hr>
+<h2 id="bolee-togo-ya-by-nemnogo-pereosmyslil-nazvanie-partnyory" tabindex="-1">Более того, я бы немного переосмыслил название «Партнёры»</h2>
+<p>Поскольку раньше мы зафиксировали:</p>
+<blockquote>
+<p><strong>Партнёры</strong> в этом dropdown = гиды, уже являющиеся партнёрами агентства,</p>
+</blockquote>
+<p>а теперь статистику хотим считать <strong>по всем зарегистрированным гидам платформы</strong>, я бы не менял значение этого пункта незаметно.</p>
+<p>Лучше:</p>
+<p><strong>Источник расчёта</strong></p>
+<ul>
+<li>Партнёры</li>
+<li>Моя библиотека</li>
+<li>Ручной ввод</li>
+</ul>
+<p>а внутри <code>Партнёры</code> показывать:</p>
+<blockquote>
+<p><strong>Ориентир платформы:</strong> 900–1 500 ₽/ч<br>
+<strong>Ваших партнёров, подходящих по условиям:</strong> 3<br>
+<strong>Всего подходящих гидов платформы:</strong> 8</p>
+</blockquote>
+<p>То есть статистика рынка может использовать всех, <strong>но выбирать конкретного исполнителя непосредственно из этого режима сначала можно среди своих партнёров</strong>.</p>
+<p>Если потом менеджер хочет увидеть остальных:</p>
+<p><strong>Посмотреть ещё 5 гидов в каталоге →</strong></p>
+<p>Так мы не ломаем уже установленную логику партнёрских отношений.</p>
+<hr>
+<h3 id="ya-by-vybral-imenno-etu-model-dlya-mvp" tabindex="-1">Я бы выбрал именно эту модель для MVP</h3>
+<p>Она даже лучше предыдущего варианта «сначала выбери конкретного гида → потом увидишь его тариф».</p>
+<p>Порядок становится естественнее:</p>
+<p><strong>дата + язык + продолжительность → рынок подсказывает ставку → менеджер выбирает бюджет → система показывает реальное количество подходящих исполнителей → при необходимости выбирается конкретный гид.</strong></p>
+<p>А главное — опубликованные гидами тарифы начинают создавать <strong>сетевой эффект</strong>: чем больше гидов заполняют тарифы и календарь, тем полезнее становится сама смета для агентств. Это уже интересная продуктовая ценность платформы, а не просто ещё одно поле профиля.</p>
+</main>
+<script>window.location.hash&&document.getElementById(window.location.hash.slice(1)).classList.add("referred"),window.addEventListener("hashchange",(e=>{const t=e.oldURL.split("#");t[1]&&document.getElementById(t[1]).classList.remove("referred");const n=e.newURL.split("#");n[1]&&document.getElementById(n[1]).classList.add("referred")}),!1);const url_parts=window.location.href.split("#"),url=url_parts[0],referrence=url_parts[1];document.querySelectorAll(".cm-s-obsidian > *[id]").forEach((function(e){e.ondblclick=function(e){const t=url+"#"+e.target.id;navigator.clipboard.writeText(t)}}))</script>
+<script src="https://fastly.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js"></script>
+<script defer="defer">TIMESTAMP_FORMAT="MMM dd, yyyy h:mm a",document.querySelectorAll(".human-date").forEach((function(e){date=e.getAttribute("data-date")||e.innerText,parsed_date=luxon.DateTime.fromISO(date),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromSQL(date)),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromHTML(date)),e.innerHTML=parsed_date.toFormat(TIMESTAMP_FORMAT)}))</script>
+<script>lucide.createIcons({attrs:{class:["svg-icon"]}})</script>
+</body>
+</html>
