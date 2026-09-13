@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>страница по клику на иконку календаря в верхнем меню</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdn.jsdelivr.net/npm/lucide@0.115.0/dist/umd/lucide.min.js"></script>
+<script>window.addEventListener("load",(()=>{document.querySelectorAll(".callout").forEach((e=>{const t=getComputedStyle(e).getPropertyValue("--callout-icon"),l=t&&t.trim().replace(/^lucide-/,"");if(l){const t=e.querySelector(".callout-title");if(t){const e=document.createElement("div"),c=document.createElement("i");e.appendChild(c),c.setAttribute("icon-name",l),e.setAttribute("class","callout-icon"),t.insertBefore(e,t.firstChild)}}})),lucide.createIcons(),Array.from(document.querySelectorAll(".callout.is-collapsible")).forEach((e=>{e.querySelector(".callout-title").addEventListener("click",(t=>{e.classList.contains("is-collapsed")?e.classList.remove("is-collapsed"):e.classList.add("is-collapsed")}))}))}))</script>
+<script async src="https://fastly.jsdelivr.net/npm/force-graph@1.43.0/dist/force-graph.min.js"></script>
+<script async src="https://fastly.jsdelivr.net/npm/@alpinejs/persist@3.11.1/dist/cdn.min.js"></script>
+<script src="https://fastly.jsdelivr.net/npm/alpinejs@3.11.1/dist/cdn.min.js" async></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-okaidia.min.css" integrity="sha512-mIs9kKbaw6JZFfSuo+MovjU+Ntggfoj8RwAmJbVXQ5mkAX5LlgETQEweFPI18humSPHymTb5iikEOKWF7I8ncQ==" crossorigin="anonymous" referrerpolicy="no-referrer" async>
+<script src="https://fastly.jsdelivr.net/npm/whatwg-fetch@3.6.2/dist/fetch.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" async></script>
+<link href="/styles/digital-garden-base.css" rel="stylesheet">
+<link href="/styles/obsidian-base.css" rel="stylesheet">
+<link href="/styles/_theme.23655cb7.css" rel="stylesheet">
+<link href="/styles/custom-style.css" rel="stylesheet">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<style></style>
+<style></style>
+</head>
+<body class="theme-dark markdown-preview-view markdown-rendered markdown-preview-section css-settings-manager theme-dark mod-windows is-frameless is-hidden-frameless obsidian-app show-inline-title show-ribbon show-view-header is-maximized minimal-theme minimal-default-dark minimal-default-light colorful-headings colorful-active links-int-on links-ext-on full-width-media img-grid minimal-folding minimal-line-nums minimal-readable minimal-light minimal-dark chart-default-width table-default-width img-default-width iframe-default-width map-default-width outliner-plugin-dnd css-settings-manager callouts-default trim-cols checkbox-circle pdf-seamless-on pdf-invert-dark pdf-blend-light sidebar-tabs-default ribbon-hidden maximize-tables-off tabs-default tab-stack-top minimal-tab-title-hover is-focused">
+<nav class="navbar">
+<div class="navbar-inner">
+<a href="/" style="text-decoration:none">
+<h1 style="margin:15px!important">Digital Garden</h1>
+</a>
+</div>
+</nav>
+<main class="content cm-s-obsidian">
+<header>
+<div class="header-meta">
+</div>
+</header>
+<p><a class="tag" onclick="toggleTagSearch(this)" data-content="#tourtoster">#tourtoster</a></p>
+<p>link: <a href="http://iammisha.github.io/calendar-gid01" target="_blank" class="external-link">iammisha.github.io/calendar-gid01</a></p>
+<p>Клик по дню</p>
+<p>Например, гид кликает 20 августа.</p>
+<p>Открывается обычное <strong>Bootstrap modal/offcanvas</strong>, а это уже штатный компонент Limitless/Bootstrap. Limitless основан на Bootstrap 5 и поддерживает и modals, и offcanvas.</p>
+<p>Внутри:</p>
+<p>Доступность на 20 августа</p>
+<p>Статус</p>
+<p>(●) Доступен<br>
+( ) Частично доступен<br>
+( ) Недоступен</p>
+<p>[ Сохранить ]</p>
+<p>Если выбрать Частично доступен, появляется:</p>
+<p>Свободное время</p>
+<p>С До<br>
+[ 10:00 ] [ 14:00 ]</p>
+<p>[ Сохранить ]</p>
+<p>И здесь как раз нет необходимости делать время «текстом».</p>
+<p>Это должны быть <strong>настоящие поля времени</strong>. Самый простой вариант для разработчика — HTML input type=&quot;time&quot; со стилем .form-control. В базе сохраняются реальные значения вроде 10:00 и 14:00, а не строка «10–14».</p>
+<p>Limitless также имеет date/time picker с timePicker, поддержкой 24-часового формата и шага минут, если разработчик захочет использовать именно плагин.</p>
+<p>Но для этого сценария я бы даже <strong>не использовал сложный picker</strong>. Два обычных time-input надежнее и проще.</p>
+<hr>
+<p><picture src="/img/user/files/Pasted%20image%2020260913123141.png" alt="Pasted image 20260913123141.png"><source media="(max-width:480px)" srcset="/img/optimized/AOPio_XJsS-500.webp" type="image/webp">
+<source media="(max-width:480px)" srcset="/img/optimized/AOPio_XJsS-500.jpeg">
+<source media="(max-width:1920px)" srcset="/img/optimized/AOPio_XJsS-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/img/optimized/AOPio_XJsS-700.jpeg"><img class="" src="/img/user/files/Pasted%20image%2020260913123141.png" alt="Pasted image 20260913123141.png" width=""></picture></p>
+<p><picture src="/img/user/files/Pasted%20image%2020260913123219.png" alt="Pasted image 20260913123219.png"><source media="(max-width:480px)" srcset="/img/optimized/hucA4TZJB8-500.webp" type="image/webp">
+<source media="(max-width:480px)" srcset="/img/optimized/hucA4TZJB8-500.jpeg">
+<source media="(max-width:1920px)" srcset="/img/optimized/hucA4TZJB8-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/img/optimized/hucA4TZJB8-700.jpeg"><img class="" src="/img/user/files/Pasted%20image%2020260913123219.png" alt="Pasted image 20260913123219.png" width=""></picture></p>
+<p>Доступность экскурсий — это <strong>настройка продажи продукта</strong>.<br>
+Доступность в календаре — это <strong>личная занятость гида и готовность брать дополнительную работу</strong>.</p>
+<p>Одна не должна автоматически включать/выключать другую.</p>
+<p><strong>1. Базовое состояние.</strong> По умолчанию любой день считается доступным. Гиду вообще не нужно заранее прокликивать месяц зелёным.</p>
+<p><strong>2. Фактическая занятость.</strong> Система сама наносит на календарь уже существующие обязательства:</p>
+<ul>
+<li>подтверждённая бронь — 10:00–14:00;</li>
+<li>принятый заказ агентства — 15:00–18:00;</li>
+</ul>
+<p><strong>3. Ручное ограничение доступности.</strong> Только когда гид сам хочет сказать системе: «в этот день я больше не хочу брать работу» или «готов работать только в такой промежуток».</p>
+<p><picture src="/img/user/files/Pasted%20image%2020260913123326.png" alt="Pasted image 20260913123326.png"><source media="(max-width:480px)" srcset="/img/optimized/xbYPXxZetv-500.webp" type="image/webp">
+<source media="(max-width:480px)" srcset="/img/optimized/xbYPXxZetv-500.jpeg">
+<source media="(max-width:1920px)" srcset="/img/optimized/xbYPXxZetv-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/img/optimized/xbYPXxZetv-700.jpeg"><img class="" src="/img/user/files/Pasted%20image%2020260913123326.png" alt="Pasted image 20260913123326.png" width=""></picture></p>
+<p><picture src="/img/user/files/Pasted%20image%2020260913123343.png" alt="Pasted image 20260913123343.png"><source media="(max-width:480px)" srcset="/img/optimized/LZew_EUA2t-500.webp" type="image/webp">
+<source media="(max-width:480px)" srcset="/img/optimized/LZew_EUA2t-500.jpeg">
+<source media="(max-width:1920px)" srcset="/img/optimized/LZew_EUA2t-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/img/optimized/LZew_EUA2t-700.jpeg"><img class="" src="/img/user/files/Pasted%20image%2020260913123343.png" alt="Pasted image 20260913123343.png" width=""></picture></p>
+<p><picture src="/img/user/files/Pasted%20image%2020260913123404.png" alt="Pasted image 20260913123404.png"><source media="(max-width:480px)" srcset="/img/optimized/bmIKHxEr4K-500.webp" type="image/webp">
+<source media="(max-width:480px)" srcset="/img/optimized/bmIKHxEr4K-500.jpeg">
+<source media="(max-width:1920px)" srcset="/img/optimized/bmIKHxEr4K-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/img/optimized/bmIKHxEr4K-700.jpeg"><img class="" src="/img/user/files/Pasted%20image%2020260913123404.png" alt="Pasted image 20260913123404.png" width=""></picture></p>
+<p><picture src="/img/user/files/Pasted%20image%2020260913123421.png" alt="Pasted image 20260913123421.png"><source media="(max-width:480px)" srcset="/img/optimized/vNT1X3tzbl-500.webp" type="image/webp">
+<source media="(max-width:480px)" srcset="/img/optimized/vNT1X3tzbl-500.jpeg">
+<source media="(max-width:1920px)" srcset="/img/optimized/vNT1X3tzbl-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/img/optimized/vNT1X3tzbl-700.jpeg"><img class="" src="/img/user/files/Pasted%20image%2020260913123421.png" alt="Pasted image 20260913123421.png" width=""></picture></p>
+<p>Самое важное — занятость и доступность не одно и то же</p>
+<p>Например 23 августа:</p>
+<p>ручная доступность: <strong>без ограничений</strong><br>
+бронь: <strong>10:00–14:00</strong></p>
+<p>Это НЕ должно превращать день в:</p>
+<p>🟠 Частично доступен 14:00–...</p>
+<p>Лучше показывать:</p>
+<p><strong>🟢 Доступен</strong><br>
+🔵 Бронь 10:00–14:00</p>
+<p>То есть человек видит: гид в принципе готов брать работу, просто определённое время уже занято.</p>
+<p>Другой случай:</p>
+<p>бронь 10:00–14:00<br>
+гид вручную поставил «доступен только 14:00–18:00»</p>
+<p>Тогда:</p>
+<p><strong>🟠 Доступен 14:00–18:00</strong><br>
+🔵 Бронь 10:00–14:00</p>
+<p>А третий:</p>
+<p>гид поставил «недоступен весь день»</p>
+<p>Тогда:</p>
+<p><strong>🔴 Недоступен</strong><br>
+🔵 Бронь 10:00–14:00</p>
+<p>Бронь всё равно отображается — установка недоступности ничего с существующей бронью не делает.</p>
+<p><picture src="/img/user/files/Pasted%20image%2020260913123456.png" alt="Pasted image 20260913123456.png"><source media="(max-width:480px)" srcset="/img/optimized/4bdoksDmMJ-500.webp" type="image/webp">
+<source media="(max-width:480px)" srcset="/img/optimized/4bdoksDmMJ-500.jpeg">
+<source media="(max-width:1920px)" srcset="/img/optimized/4bdoksDmMJ-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/img/optimized/4bdoksDmMJ-700.jpeg"><img class="" src="/img/user/files/Pasted%20image%2020260913123456.png" alt="Pasted image 20260913123456.png" width=""></picture></p>
+<p><picture src="/img/user/files/Pasted%20image%2020260913123524.png" alt="Pasted image 20260913123524.png"><source media="(max-width:480px)" srcset="/img/optimized/LRHtZvhp5e-500.webp" type="image/webp">
+<source media="(max-width:480px)" srcset="/img/optimized/LRHtZvhp5e-500.jpeg">
+<source media="(max-width:1920px)" srcset="/img/optimized/LRHtZvhp5e-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/img/optimized/LRHtZvhp5e-700.jpeg"><img class="" src="/img/user/files/Pasted%20image%2020260913123524.png" alt="Pasted image 20260913123524.png" width=""></picture></p>
+<p><picture src="/img/user/files/Pasted%20image%2020260913123546.png" alt="Pasted image 20260913123546.png"><source media="(max-width:480px)" srcset="/img/optimized/gBFoAW_YPU-500.webp" type="image/webp">
+<source media="(max-width:480px)" srcset="/img/optimized/gBFoAW_YPU-500.jpeg">
+<source media="(max-width:1920px)" srcset="/img/optimized/gBFoAW_YPU-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/img/optimized/gBFoAW_YPU-700.jpeg"><img class="" src="/img/user/files/Pasted%20image%2020260913123546.png" alt="Pasted image 20260913123546.png" width=""></picture></p>
+<p>Вместо этого — проверка конкретного предложения</p>
+<p>Допустим менеджер агентства заполняет приглашение:</p>
+<p>Гид<br>
+Алексей Смирнов</p>
+<p>Дата<br>
+23 августа</p>
+<p>Время встречи<br>
+13:00</p>
+<p>Продолжительность<br>
+3 часа</p>
+<p>Система сразу рассчитывает:</p>
+<p>предполагаемая занятость: <strong>13:00–16:00</strong></p>
+<p>и проверяет календарь.</p>
+<p>Если у гида уже есть подтверждённая бронь:</p>
+<p>10:00–14:00</p>
+<p>форма показывает:</p>
+<p>🔴 Гид недоступен в указанное время</p>
+<p>Есть пересечение с существующей занятостью.</p>
+<p>И я бы предложил:</p>
+<p><strong>[Изменить время]</strong></p>
+<p>или</p>
+<p><strong>[Выбрать другого гида]</strong></p>
+<p>В большинстве случаев кнопку Отправить приглашение здесь вообще можно заблокировать.</p>
+<p><picture src="/img/user/files/Pasted%20image%2020260913123617.png" alt="Pasted image 20260913123617.png"><source media="(max-width:480px)" srcset="/img/optimized/TbCH70PgiE-500.webp" type="image/webp">
+<source media="(max-width:480px)" srcset="/img/optimized/TbCH70PgiE-500.jpeg">
+<source media="(max-width:1920px)" srcset="/img/optimized/TbCH70PgiE-700.webp" type="image/webp"><source media="(max-width:1920px)" srcset="/img/optimized/TbCH70PgiE-700.jpeg"><img class="" src="/img/user/files/Pasted%20image%2020260913123617.png" alt="Pasted image 20260913123617.png" width=""></picture></p>
+<p>Более того, агентству необязательно знать даже точный занятый интервал</p>
+<p>Представим запрос:</p>
+<p>23 августа, 12:00–16:00.</p>
+<p>Система знает, что у гида бронь 10:00–14:00.</p>
+<p>Можно показать просто:</p>
+<p>🔴 <strong>Гид недоступен для этого времени.</strong></p>
+<p>Без:</p>
+<p>занят 10:00–14:00.</p>
+<p>Это самый privacy-friendly вариант.</p>
+<p>Но я бы дал гиду настройку:</p>
+<p>Видимость доступности партнёрам</p>
+<p><strong>● Показывать только результат проверки</strong></p>
+<p>Доступен / недоступен для выбранного времени.</p>
+<p>○ Показывать свободные интервалы</p>
+<p>Например: свободен после 14:00.</p>
+<p>Однако есть хороший аргумент в пользу показа свободного времени</p>
+<p>Менеджеру гораздо полезнее получить:</p>
+<p>Алексей недоступен 12:00–16:00,<br>
+<strong>но доступен после 14:30</strong></p>
+<p>чем просто:</p>
+<p>Недоступен.</p>
+<p>Он может тут же изменить время экскурсии.</p>
+<p>Поэтому есть очень удачный компромисс:</p>
+<p>Не показываем, чем гид занят.</p>
+<p>Но показываем <strong>ближайшие доступные интервалы</strong>.</p>
+<p>Например:</p>
+<p>Алексей Смирнов</p>
+<p>Запрошено:<br>
+23 августа<br>
+12:00–16:00</p>
+<p>🔴 Недоступен</p>
+<p>Ближайшая доступность:<br>
+14:30–19:00</p>
+<p>[Изменить время]</p>
+<p>Агентство не знает:</p>
+<ul>
+<li>была там бронь;</li>
+<li>личное дело;</li>
+<li>другой заказ;</li>
+<li>ручная недоступность.</li>
+</ul>
+<p>Оно знает только то, что необходимо для принятия решения.</p>
+<p>Мне эта модель нравится больше всего.</p>
+<p>Тогда и ручная доступность гида приобретает ясный смысл</p>
+<p>Например гид устанавливает:</p>
+<p>23 августа<br>
+<strong>Доступен только 14:00–18:00</strong></p>
+<p>Это именно <strong>информация системе о том, когда ему можно присылать новую работу</strong>.</p>
+<p>А не настройка экскурсий.</p>
+<p>Следовательно, агентство предлагает:</p>
+<p>15:00–17:00</p>
+<p>🟢 <strong>Доступен</strong></p>
+<p>17:00–20:00</p>
+<p>🔴 <strong>Недоступен для всего периода</strong></p>
+<p>10:00–12:00</p>
+<p>🔴 <strong>Недоступен</strong></p>
+<p>Очень понятное поведение.</p>
+<p>Что если гид вообще ничего не редактировал</p>
+<p>Как ты предложил:</p>
+<p><strong>по умолчанию все даты доступны для новых предложений.</strong></p>
+<p>Согласен.</p>
+<p>Тогда система использует:</p>
+<p><strong>Default availability</strong></p>
+<p>разрешено принимать предложения</p>
+<p>минус:</p>
+<p><strong>подтверждённая занятость</strong></p>
+<p>брони + принятые заказы</p>
+<p>минус:</p>
+<p><strong>ручные ограничения гида</strong></p>
+<p>Получаем:</p>
+<p>Фактическую доступность для нового предложения</p>
+<p>Можно представить формулой:</p>
+<p><strong>Доступность для партнёра = базовая доступность − ручные ограничения − подтверждённая занятость</strong></p>
+<p>Но это <strong>не связано с переключателями доступности экскурсий</strong>.</p>
+<p>Поэтому я бы зафиксировал правило так</p>
+<p><strong>Агентства не получают доступ к календарю гида. Они получают доступ к результату проверки его доступности для конкретного периода.</strong></p>
+<p>И только по желанию гида можно сделать более открытую настройку:</p>
+<p>«Показывать партнёрам мои свободные интервалы».</p>
+<p>Таким образом:</p>
+<p><strong>гид сохраняет приватность → агентство не делает бессмысленных приглашений → система становится посредником между календарём и приглашением.</strong></p>
+<p>А в форме приглашения я бы добавил небольшой системный блок прямо под датой и временем:</p>
+<p>🟢 <strong>Гид доступен в выбранное время</strong></p>
+<p>или</p>
+<p>🔴 <strong>Гид недоступен в выбранное время</strong><br>
+Ближайшая доступность: 14:30–18:00<br>
+[Изменить время]</p>
+<p>Это, на мой взгляд, лучше предыдущей идеи, где агентство всё равно могло без особой причины отправлять заведомо конфликтующее приглашение.</p>
+</main>
+<script>window.location.hash&&document.getElementById(window.location.hash.slice(1)).classList.add("referred"),window.addEventListener("hashchange",(e=>{const t=e.oldURL.split("#");t[1]&&document.getElementById(t[1]).classList.remove("referred");const n=e.newURL.split("#");n[1]&&document.getElementById(n[1]).classList.add("referred")}),!1);const url_parts=window.location.href.split("#"),url=url_parts[0],referrence=url_parts[1];document.querySelectorAll(".cm-s-obsidian > *[id]").forEach((function(e){e.ondblclick=function(e){const t=url+"#"+e.target.id;navigator.clipboard.writeText(t)}}))</script>
+<script src="https://fastly.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js"></script>
+<script defer="defer">TIMESTAMP_FORMAT="MMM dd, yyyy h:mm a",document.querySelectorAll(".human-date").forEach((function(e){date=e.getAttribute("data-date")||e.innerText,parsed_date=luxon.DateTime.fromISO(date),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromSQL(date)),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromHTML(date)),e.innerHTML=parsed_date.toFormat(TIMESTAMP_FORMAT)}))</script>
+<script>lucide.createIcons({attrs:{class:["svg-icon"]}})</script>
+</body>
+</html>

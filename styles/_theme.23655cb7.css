@@ -140,6 +140,7 @@ body {
   --nn-theme-mobile-toolbar-bg: var(--workspace-sidebar-bg);
   --nn-theme-mobile-toolbar-button-icon-color: var(--icon-color);
   --nn-theme-navitem-border-radius: var(--default-radius);
+  --vim-motions-cursorline-bg: var(--interactive-normal);
   --code-normal: #eeeeee;
   --code-comment: #16486D;
   --code-function: #69EED7;
@@ -1037,6 +1038,11 @@ body.is-focused .sidebar-toggle-button {
 
 .workspace-ribbon.side-dock-ribbon {
   background-color: var(--workspace-ribbon-bg);
+  border: none;
+}
+
+.workspace-ribbon.mod-primary::before {
+  border: none;
 }
 
 .side-dock-ribbon-action {
@@ -2369,7 +2375,7 @@ input.metadata-property-key-input {
 @supports (color: color-mix(in srgb, white 50%, black)) {
   .callout {
     --bases-table-header-background: transparent;
-    --bases-table-header-background-hover: rgb(var(--callout-color), 0.1);
+    --bases-table-header-background-hover: color-mix(in srgb, var(--callout-color) 10%, transparent);
     --bases-embed-border-color: var(--divider-color);
     --bases-table-border-color: var(--divider-color);
     --table-border-color: var(--divider-color);
@@ -2495,6 +2501,20 @@ button.kanban-plugin__new-item-button {
 
 .various-complements__suggestion-item.is-selected {
   background-color: var(--color-accent);
+}
+
+
+.vim-motions-cursorline {
+  background-color: var(--vim-motions-cursorline-bg, color-mix(in oklch, var(--text-accent) 6%, transparent));
+  border-radius: calc(var(--blockquote-radius) / 2);
+}
+
+.vim-motions-picker-section .vim-motions-picker-preview, .vim-motions-picker-section .vim-motions-picker-results {
+  border-radius: var(--modal-radius);
+}
+
+.vim-motions-picker-section input.vim-motions-picker-input, .vim-motions-picker-section input.vim-motions-picker-input:active, .vim-motions-picker-section input.vim-motions-picker-input:focus {
+  border-radius: var(--input-radius);
 }
 
 
