@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>типы подтверждения экскурсий</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdn.jsdelivr.net/npm/lucide@0.115.0/dist/umd/lucide.min.js"></script>
+<script>window.addEventListener("load",(()=>{document.querySelectorAll(".callout").forEach((e=>{const t=getComputedStyle(e).getPropertyValue("--callout-icon"),l=t&&t.trim().replace(/^lucide-/,"");if(l){const t=e.querySelector(".callout-title");if(t){const e=document.createElement("div"),c=document.createElement("i");e.appendChild(c),c.setAttribute("icon-name",l),e.setAttribute("class","callout-icon"),t.insertBefore(e,t.firstChild)}}})),lucide.createIcons(),Array.from(document.querySelectorAll(".callout.is-collapsible")).forEach((e=>{e.querySelector(".callout-title").addEventListener("click",(t=>{e.classList.contains("is-collapsed")?e.classList.remove("is-collapsed"):e.classList.add("is-collapsed")}))}))}))</script>
+<script async src="https://fastly.jsdelivr.net/npm/force-graph@1.43.0/dist/force-graph.min.js"></script>
+<script async src="https://fastly.jsdelivr.net/npm/@alpinejs/persist@3.11.1/dist/cdn.min.js"></script>
+<script src="https://fastly.jsdelivr.net/npm/alpinejs@3.11.1/dist/cdn.min.js" async></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-okaidia.min.css" integrity="sha512-mIs9kKbaw6JZFfSuo+MovjU+Ntggfoj8RwAmJbVXQ5mkAX5LlgETQEweFPI18humSPHymTb5iikEOKWF7I8ncQ==" crossorigin="anonymous" referrerpolicy="no-referrer" async>
+<script src="https://fastly.jsdelivr.net/npm/whatwg-fetch@3.6.2/dist/fetch.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" async></script>
+<link href="/styles/digital-garden-base.css" rel="stylesheet">
+<link href="/styles/obsidian-base.css" rel="stylesheet">
+<link href="/styles/_theme.23655cb7.css" rel="stylesheet">
+<link href="/styles/custom-style.css" rel="stylesheet">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<style></style>
+<style></style>
+</head>
+<body class="theme-dark markdown-preview-view markdown-rendered markdown-preview-section css-settings-manager theme-dark mod-windows is-frameless is-hidden-frameless obsidian-app show-inline-title show-ribbon show-view-header is-maximized minimal-theme minimal-default-dark minimal-default-light colorful-headings colorful-active links-int-on links-ext-on full-width-media img-grid minimal-folding minimal-line-nums minimal-readable minimal-light minimal-dark chart-default-width table-default-width img-default-width iframe-default-width map-default-width outliner-plugin-dnd css-settings-manager callouts-default trim-cols checkbox-circle pdf-seamless-on pdf-invert-dark pdf-blend-light sidebar-tabs-default ribbon-hidden maximize-tables-off tabs-default tab-stack-top minimal-tab-title-hover is-focused">
+<nav class="navbar">
+<div class="navbar-inner">
+<a href="/" style="text-decoration:none">
+<h1 style="margin:15px!important">Digital Garden</h1>
+</a>
+</div>
+</nav>
+<main class="content cm-s-obsidian">
+<header>
+<div class="header-meta">
+</div>
+</header>
+<p>link: <a href="http://iammisha.github.io/types-confirmation-excursions" target="_blank" class="external-link">iammisha.github.io/types-confirmation-excursions</a></p>
+<p><a class="tag" onclick="toggleTagSearch(this)" data-content="#tourtoster">#tourtoster</a></p>
+<h2 id="1-chto-voobshhe-reguliruet-tip-podtverzhdeniya" tabindex="-1">1. Что вообще регулирует «Тип подтверждения»</h2>
+<p>Настройка определяет, <strong>когда заявка туриста превращается в подтверждённое бронирование экскурсии</strong>.</p>
+<p>То есть после нажатия туристом «Забронировать» система должна решить:</p>
+<ul>
+<li>подтвердить бронь автоматически;</li>
+<li>отправить её гиду на подтверждение;</li>
+<li>сколько времени ждать решения гида;</li>
+<li>что делать, если гид ничего не сделал.</li>
+</ul>
+<h1 id="mgnovennoe-podtverzhdenie" tabindex="-1">Мгновенное подтверждение</h1>
+<h3 id="chto-oznachaet" tabindex="-1">Что означает</h3>
+<p>Если экскурсия доступна на выбранную дату/время и турист выполнил необходимые условия бронирования, бронь <strong>сразу становится подтверждённой без участия гида</strong>.</p>
+<h3 id="workflow" tabindex="-1">Workflow</h3>
+<pre><code>Турист выбирает экскурсию
+        ↓
+Выбирает свободную дату/время
+        ↓
+Отправляет бронирование
+        ↓
+Система проверяет доступность
+        ↓
+Бронь автоматически CONFIRMED
+        ↓
+Время блокируется в календаре
+        ↓
+Турист получает подтверждение
+</code></pre>
+<p>Гиду ничего подтверждать не требуется.</p>
+<h3 id="primer" tabindex="-1">Пример</h3>
+<p>Экскурсия:</p>
+<blockquote>
+<p>«Парадный Петербург»<br>
+20 августа, 14:00</p>
+</blockquote>
+<p>Гид поставил:</p>
+<blockquote>
+<p>Мгновенное подтверждение.</p>
+</blockquote>
+<p>Турист бронирует 19 августа в 18:00.</p>
+<p>Результат:</p>
+<blockquote>
+<p>✅ Бронирование №1234 подтверждено.</p>
+</blockquote>
+<p>В кабинете гида оно сразу появляется как подтверждённое.</p>
+<h3 id="kogda-podhodit" tabindex="-1">Когда подходит</h3>
+<p>Например:</p>
+<ul>
+<li>регулярные групповые экскурсии;</li>
+<li>гид точно ведёт актуальный календарь;</li>
+<li>экскурсия проводится практически при любом количестве участников;</li>
+<li>агентство имеет достаточно ресурсов, чтобы выполнять поступающие бронирования.</li>
+</ul>
+<h3 id="vazhnyj-moment-dlya-razrabotki" tabindex="-1">Важный момент для разработки</h3>
+<p>Перед автоматическим подтверждением система всё равно должна повторно проверить:</p>
+<pre><code>slot_available = true
+excursion_active = true
+booking_window_open = true
+capacity_available = true
+</code></pre>
+<p>Это защищает от ситуации, когда два туриста одновременно пытаются занять последний слот.</p>
+<h1 id="avtomaticheskoe-podtverzhdenie-do-opredelyonnogo-vremeni" tabindex="-1">Автоматическое подтверждение до определённого времени</h1>
+<p>На текущем интерфейсе это называется <strong>«Лимитированное»</strong>.</p>
+<p>Я бы это название <strong>заменил</strong> — пользователю совершенно не очевидно, что именно лимитируется.</p>
+<p>Лучше:</p>
+<blockquote>
+<p><strong>Автоматическое + ручное для поздних бронирований</strong></p>
+</blockquote>
+<p>или короче:</p>
+<blockquote>
+<p><strong>Подтверждение в зависимости от времени</strong></p>
+</blockquote>
+<p>Ещё хороший UI-вариант:</p>
+<blockquote>
+<p><strong>Автоматически заранее, вручную перед началом</strong></p>
+</blockquote>
+<h2 id="kak-rabotaet" tabindex="-1">Как работает</h2>
+<p>Гид устанавливает границу, например:</p>
+<blockquote>
+<p>За 12 часов до начала экскурсии.</p>
+</blockquote>
+<p>Тогда:</p>
+<pre><code>Более чем за 12 часов
+→ автоматическое подтверждение
+
+Менее чем за 12 часов
+→ требуется подтверждение гида
+</code></pre>
+<p>То есть это <strong>гибридный режим</strong>.</p>
+<hr>
+<h2 id="primer-1" tabindex="-1">Пример 1</h2>
+<p>Экскурсия:</p>
+<blockquote>
+<p>25 августа в 15:00</p>
+</blockquote>
+<p>Настройка:</p>
+<blockquote>
+<p>Поздние бронирования подтверждать вручную за 12 часов до начала.</p>
+</blockquote>
+<h3 id="turist-a" tabindex="-1">Турист А</h3>
+<p>Бронирует:</p>
+<blockquote>
+<p>24 августа в 10:00</p>
+</blockquote>
+<p>До экскурсии 29 часов.</p>
+<p>Результат:</p>
+<blockquote>
+<p>✅ Подтверждено автоматически.</p>
+</blockquote>
+<h3 id="turist-b" tabindex="-1">Турист Б</h3>
+<p>Бронирует:</p>
+<blockquote>
+<p>25 августа в 10:30</p>
+</blockquote>
+<p>До экскурсии 4,5 часа.</p>
+<p>Результат:</p>
+<blockquote>
+<p>⏳ Ожидает подтверждения гида.</p>
+</blockquote>
+<p>Гиду приходит уведомление:</p>
+<blockquote>
+<p>Новое бронирование на сегодня в 15:00.<br>
+Подтвердить / Отклонить.</p>
+</blockquote>
+<hr>
+<h2 id="zachem-voobshhe-nuzhen-etot-rezhim" tabindex="-1">Зачем вообще нужен этот режим</h2>
+<p>Он особенно полезен именно для вашей платформы.</p>
+<p>Например, гид знает, что на завтра свободен, поэтому спокойно принимает брони автоматически.</p>
+<p>Но турист пытается заказать экскурсию:</p>
+<blockquote>
+<p>сегодня через 2 часа.</p>
+</blockquote>
+<p>Гиду необходимо проверить:</p>
+<ul>
+<li>успевает ли он приехать;</li>
+<li>не изменились ли планы;</li>
+<li>доступен ли транспорт;</li>
+<li>возможно ли купить билеты;</li>
+<li>можно ли собрать дополнительного гида;</li>
+<li>успеет ли он подготовиться.</li>
+</ul>
+<p>Поэтому последние несколько часов переводятся в ручной режим.</p>
+<h1 id="ruchnoe-podtverzhdenie" tabindex="-1">Ручное подтверждение</h1>
+<h3 id="chto-oznachaet-1" tabindex="-1">Что означает</h3>
+<p><strong>Любое новое бронирование сначала является запросом на бронирование.</strong></p>
+<p>Сам факт того, что турист выбрал свободную дату, ещё не означает окончательного подтверждения.</p>
+<p>Workflow:</p>
+<pre><code>Турист отправил бронирование
+        ↓
+PENDING_CONFIRMATION
+        ↓
+Гиду приходит уведомление
+        ↓
+      ┌──────────────┐
+      │              │
+ Подтвердить      Отклонить
+      │              │
+      ↓              ↓
+ CONFIRMED        DECLINED
+</code></pre>
+<hr>
+<h2 id="primer-2" tabindex="-1">Пример</h2>
+<p>Турист хочет индивидуальную экскурсию:</p>
+<blockquote>
+<p>Петергоф<br>
+4 человека<br>
+26 августа<br>
+10:00–16:00</p>
+</blockquote>
+<p>У экскурсии установлено:</p>
+<blockquote>
+<p>Ручное подтверждение.</p>
+</blockquote>
+<p>После отправки турист видит:</p>
+<blockquote>
+<p>Запрос отправлен гиду.<br>
+Обычно подтверждение занимает до 1 часа.</p>
+</blockquote>
+<p>Гид получает:</p>
+<blockquote>
+<p>Новое бронирование<br>
+26 августа, 10:00<br>
+4 гостя<br>
+Петергоф</p>
+<p><strong>Подтвердить</strong> | <strong>Отклонить</strong></p>
+</blockquote>
+<p>После подтверждения:</p>
+<blockquote>
+<p>✅ Бронирование подтверждено.</p>
+</blockquote>
+<p><img src="/img/user/files/Pasted%20image%2020260918123015.png" alt="Pasted image 20260918123015.png"></p>
+</main>
+<script>window.location.hash&&document.getElementById(window.location.hash.slice(1)).classList.add("referred"),window.addEventListener("hashchange",(e=>{const t=e.oldURL.split("#");t[1]&&document.getElementById(t[1]).classList.remove("referred");const n=e.newURL.split("#");n[1]&&document.getElementById(n[1]).classList.add("referred")}),!1);const url_parts=window.location.href.split("#"),url=url_parts[0],referrence=url_parts[1];document.querySelectorAll(".cm-s-obsidian > *[id]").forEach((function(e){e.ondblclick=function(e){const t=url+"#"+e.target.id;navigator.clipboard.writeText(t)}}))</script>
+<script src="https://fastly.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js"></script>
+<script defer="defer">TIMESTAMP_FORMAT="MMM dd, yyyy h:mm a",document.querySelectorAll(".human-date").forEach((function(e){date=e.getAttribute("data-date")||e.innerText,parsed_date=luxon.DateTime.fromISO(date),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromSQL(date)),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromHTML(date)),e.innerHTML=parsed_date.toFormat(TIMESTAMP_FORMAT)}))</script>
+<script>lucide.createIcons({attrs:{class:["svg-icon"]}})</script>
+</body>
+</html>
