@@ -231,6 +231,61 @@
 Ближайшая доступность: 14:30–18:00<br>
 [Изменить время]</p>
 <p>Это, на мой взгляд, лучше предыдущей идеи, где агентство всё равно могло без особой причины отправлять заведомо конфликтующее приглашение.</p>
+<h1 id="nastrojki-kalendarya" tabindex="-1">Настройки календаря</h1>
+<p><strong>три конкретных права</strong>, потому что теперь они отвечают за три разных пользовательских сценария.</p>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>Право</th>
+<th>Что может агентство</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Только проверка</strong></td>
+<td>Проверить конкретные дату/время и получить <code>Доступен / Недоступен</code></td>
+</tr>
+<tr>
+<td><strong>Просмотр доступности</strong></td>
+<td>Видеть гида в своём календаре «Доступность партнёров» как 🟢 / 🟠 / 🔴</td>
+</tr>
+<tr>
+<td><strong>Просмотр свободного времени</strong></td>
+<td>То же + видеть доступные интервалы, например <code>14:00–18:00</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>При этом <strong>ни на одном уровне нельзя видеть события календаря гида</strong>: брони, название экскурсии, заказчика, другое агентство, туристов, комментарии и причину недоступности.</p>
+<h2 id="chto-proishodit-pri-izmenenii-prava" tabindex="-1">Что происходит при изменении права</h2>
+<p>Это тоже стоит явно дать разработчику.</p>
+<p>Например у <code>Нева Тур</code> было:</p>
+<blockquote>
+<p><strong>Просмотр свободного времени</strong></p>
+</blockquote>
+<p>и гид меняет на:</p>
+<blockquote>
+<p><strong>Только проверка</strong></p>
+</blockquote>
+<p>После сохранения:</p>
+<ul>
+<li>агентство больше не видит этого гида в календаре «Доступность партнёров»;</li>
+<li>но если менеджер создаёт конкретное приглашение этому гиду, система всё ещё может выполнить проверку даты/времени;</li>
+<li>существующие партнёрские отношения не меняются;</li>
+<li>брони и приглашения не меняются.</li>
+</ul>
+<p>Если поставить:</p>
+<blockquote>
+<p><strong>Просмотр доступности</strong></p>
+</blockquote>
+<p>гид появляется во вкладке доступности партнёров, но агентство видит только статусы, без часов.</p>
+<h2 id="v-re" tabindex="-1">В ре</h2>
+<p>права должны явно контролировать <strong>не только количество информации, но и сам способ доступа</strong>:</p>
+<p><strong>Только проверка</strong><br>
+→ точечный запрос.</p>
+<p><strong>Просмотр доступности</strong><br>
+→ агрегированный календарь партнёров.</p>
+<p><strong>Просмотр свободного времени</strong><br>
+→ календарь + интервалы.</p>
 </main>
 <script>window.location.hash&&document.getElementById(window.location.hash.slice(1)).classList.add("referred"),window.addEventListener("hashchange",(e=>{const t=e.oldURL.split("#");t[1]&&document.getElementById(t[1]).classList.remove("referred");const n=e.newURL.split("#");n[1]&&document.getElementById(n[1]).classList.add("referred")}),!1);const url_parts=window.location.href.split("#"),url=url_parts[0],referrence=url_parts[1];document.querySelectorAll(".cm-s-obsidian > *[id]").forEach((function(e){e.ondblclick=function(e){const t=url+"#"+e.target.id;navigator.clipboard.writeText(t)}}))</script>
 <script src="https://fastly.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js"></script>
