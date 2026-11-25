@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"partymodeon","permalink":"/partymodeon/"}
+{"dg-publish":true,"dg-permalink":"partymodeon","permalink":"/partymodeon/","dg-note-properties":{"created":"2025-06-15T20:43","updated":"2025-06-16T22:31"}}
 ---
 
 #instagram #drone 
@@ -18,7 +18,7 @@ url: iammisha.github.io/partymodeon
 
 - **элемент-дизайна** по центру экрана
 Смотреть файл - canva-dCufRo4EqeU.mp4 - это пример
-![Pasted image 20250616152015.png|300](/img/user/files/Pasted%20image%2020250616152015.png)
+![Pasted image 20250616152015.png\|300](/img/user/files/Pasted%20image%2020250616152015.png)
 
 *Текст* - PARTY MODE
 слово "off" - внутри toggle - не нужно
@@ -65,7 +65,7 @@ url: iammisha.github.io/partymodeon
 Файл - canva-Qfg6eQKxIRA
 
 Вместо пальца вверх - сердце
-![Pasted image 20250617081742.png|300](/img/user/files/Pasted%20image%2020250617081742.png)
+![Pasted image 20250617081742.png\|300](/img/user/files/Pasted%20image%2020250617081742.png)
 
 Надпись #dronepatrolfl
-![Pasted image 20250617081804.png|300](/img/user/files/Pasted%20image%2020250617081804.png)
+![Pasted image 20250617081804.png\|300](/img/user/files/Pasted%20image%2020250617081804.png)

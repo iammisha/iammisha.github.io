@@ -1,8 +1,8 @@
 ---
-{"dg-publish":true,"permalink":"/3-mini-reels-with-boats/"}
+{"dg-publish":true,"permalink":"/3-mini-reels-with-boats/","dg-note-properties":{"created":"2025-06-12T19:08","updated":"2025-06-12T23:39"}}
 ---
 
-
+#drone #instagram #task #concept #videoediting 
 # 1 видео
 
 в начале используется ПЕРВАЯ маленькая лодка из уже сделанного большого ролика.
@@ -112,14 +112,14 @@ https://www.instagram.com/reels/audio/1399022334764813?igsh=NnlhZzFlbDR1aHBv
 
 # Комментарии
 
-![Pasted image 20250613212317.png|300](/img/user/files/Pasted%20image%2020250613212317.png)
+![Pasted image 20250613212317.png\|300](/img/user/files/Pasted%20image%2020250613212317.png)
 - текст не появляется, а уже присутсвует в самом первом кадре
 - изменить написание на 
 	- lil bro: doing his best...
 	- BIG bro: just flexed
 	- третью надпись полностью заменить на Know your place - в одну строчку - сохранить эмоджи
 
-![Pasted image 20250613212921.png|300](/img/user/files/Pasted%20image%2020250613212921.png)
+![Pasted image 20250613212921.png\|300](/img/user/files/Pasted%20image%2020250613212921.png)
 - изменить написание 
 	- crew tender: doing its job - в одну строчку
 	- ownder' tender: doing the most - в одну строчку - на кадрых сверху и сзади чтобы не закрывало моторы и название лодки

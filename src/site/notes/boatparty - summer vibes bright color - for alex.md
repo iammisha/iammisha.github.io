@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-permalink":"boatparty-alex","permalink":"/boatparty-alex/"}
+{"dg-publish":true,"dg-permalink":"boatparty-alex","permalink":"/boatparty-alex/","dg-note-properties":{"created":"2025-06-15T23:20","updated":"2025-06-16T11:20"}}
 ---
 
 
@@ -19,11 +19,11 @@ url: iammisha.github.io/boatparty-alex
 
 - **элемент-дизайна** по центру экрана
 Смотреть файл - canva-P6YWvOS3N8A.mp4 - это пример
-![Pasted image 20250617083550.png|300](/img/user/files/Pasted%20image%2020250617083550.png)
+![Pasted image 20250617083550.png\|300](/img/user/files/Pasted%20image%2020250617083550.png)
 
 **Что изменить**
 - вместо "солнца с лучами" - эмоджи солнца - [☉ Emoji Sun on Apple iOS 14.5](https://emojitool.com/en/apple/ios-14.5/sun)
-![sun-2498.png|50](/img/user/files/sun-2498.png)
+![sun-2498.png\|50](/img/user/files/sun-2498.png)
 - вместо *Sale* - *VIBES* - ==главное повторить цвет==
 - шрифт *VIBES* такой же как SUMMER, ==не курсивом==
 - на видео-примере есть небольшое движение слова sale, сделать примерно так же со словом *VIBES*, движение слева направо
@@ -58,9 +58,9 @@ c 00:49 до 1:20
 1:55-2:00
 *элементы*
 смотреть файл outro, сделать подобные элементы. только цвет фона кнопки синий.
-![Pasted image 20250617215823.png|300](/img/user/files/Pasted%20image%2020250617215823.png)
-![Pasted image 20250617215904.png|300](/img/user/files/Pasted%20image%2020250617215904.png)
-![Pasted image 20250617215918.png|300](/img/user/files/Pasted%20image%2020250617215918.png)
+![Pasted image 20250617215823.png\|300](/img/user/files/Pasted%20image%2020250617215823.png)
+![Pasted image 20250617215904.png\|300](/img/user/files/Pasted%20image%2020250617215904.png)
+![Pasted image 20250617215918.png\|300](/img/user/files/Pasted%20image%2020250617215918.png)
 
 
 
@@ -72,8 +72,8 @@ c 00:49 до 1:20
 
 3. Часть с 00:23-00:31 поменять местами с 0:32-0:38
 
-4. на кадрах с 0:42 разместить элементы ![Pasted image 20250621112455.png|300](/img/user/files/Pasted%20image%2020250621112455.png)
+4. на кадрах с 0:42 разместить элементы ![Pasted image 20250621112455.png\|300](/img/user/files/Pasted%20image%2020250621112455.png)
 т.е. не на чёрном экране на поверх видео. может вокруг элементов оставить чёрный фон, но чтобы на фоне было видео. 
 вот тут примерно разместить
-![Pasted image 20250621112715.png|300](/img/user/files/Pasted%20image%2020250621112715.png)
+![Pasted image 20250621112715.png\|300](/img/user/files/Pasted%20image%2020250621112715.png)
 

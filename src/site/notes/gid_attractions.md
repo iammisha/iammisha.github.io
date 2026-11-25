@@ -1,6 +1,8 @@
 ---
-{"dg-publish":true,"dg-permalink":"gid-attractions-timur","permalink":"/gid-attractions-timur/"}
+{"dg-publish":true,"dg-permalink":"gid-attractions-timur","permalink":"/gid-attractions-timur/","dg-note-properties":{"created":"2026-04-24T02:07","updated":"2026-04-28T13:49"}}
 ---
+
+#tourtoster 
 
 # gid_Attractions_attraction database
 

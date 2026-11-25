@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/concept-boat-fun-with-movie-intro-for-mikhail/"}
+{"dg-publish":true,"permalink":"/concept-boat-fun-with-movie-intro-for-mikhail/","dg-note-properties":{"created":"2025-06-12T23:15","updated":"2025-06-12T23:20"}}
 ---
 
 #drone #videoediting #concept #instagram
