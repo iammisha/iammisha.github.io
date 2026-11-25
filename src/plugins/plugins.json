@@ -56,7 +56,7 @@
       "installedVersion": "1.0.0",
       "installedRef": "v1.0.0",
       "installedAt": "2026-11-24T20:56:33.850Z",
-      "enabled": false,
+      "enabled": true,
       "files": [
         "src/plugins/heading-folding/LICENSE",
         "src/plugins/heading-folding/README.md",
