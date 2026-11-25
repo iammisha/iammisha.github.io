@@ -92,6 +92,9 @@
     },
     "dg-filetree": {
       "enabled": false
+    },
+    "dg-link-preview": {
+      "enabled": false
     }
   }
 }
