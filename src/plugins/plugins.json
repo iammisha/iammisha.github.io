@@ -89,6 +89,9 @@
         "src/plugins/light-dark-mode/templates/head.njk",
         "src/plugins/light-dark-mode/tests/themeModes.test.cjs"
       ]
+    },
+    "dg-filetree": {
+      "enabled": false
     }
   }
 }
